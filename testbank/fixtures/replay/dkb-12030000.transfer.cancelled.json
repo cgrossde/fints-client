@@ -1,0 +1,702 @@
+{
+  "format": "fints-client-trace/4",
+  "comment": [
+    "Recorded with examples/transfer.rs at BLZ 12030000, one transfer (No), 6 exchanges.",
+    "Masked by the library, anonymised by Trace::from_exchanges; reviewed by hand."
+  ],
+  "client": {
+    "version": "0.1.0",
+    "outcome": "cancelled"
+  },
+  "bank": {
+    "blz": "12030000",
+    "bic": "BYLADEM1001"
+  },
+  "accounts": [
+    {
+      "alias": "#1",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCM",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCME",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#2",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCM",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCME",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#3",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#4",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#5",
+      "class": "credit-card",
+      "kontoart": 50,
+      "jobs": [
+        "HKCAZ",
+        "HKEKP",
+        "HKFRD",
+        "HKKAA",
+        "HKKAZ",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTSY",
+        "HKTAB"
+      ]
+    }
+  ],
+  "exchanges": [
+    {
+      "index": 0,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3",
+          "HKSYN:3"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          },
+          {
+            "job": "HKSYN",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000393+300+0+1'",
+        "HNVSK:998:3+PIN:1+998+1+1::0+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@231@",
+        "HNSHK:2:4+PIN:1+999+1250049+1+1+1::0+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKIDN:3:2+280:12030000+3810313958_o+0+1'",
+        "HKVVB:4:3+0+0+1+*************************+1.0'",
+        "HKSYN:5:3+0'",
+        "HNSHA:6:2+1250049++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000005375+300+DIALOG0001+1+DIALOG0001:1'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@5147@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:4+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:940'",
+        "HIRMS:4:2:5+0020::Auftrag ausgeführt.'",
+        "HIBPA:5:3:4+33+280:12030000+Deutsche Kreditbank Aktiengesellschaft+1+1+300'",
+        "HIKOM:6:4:4+280:12030000+1+3:https?://fints.dkb.de/fints'",
+        "HIVPPS:7:1:4+1+1+0+1000:N:V:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10:HKCCM:HKCCS:HKCDE:HKCDN:HKCME:HKCSA:HKCSE:HKIDA:HKIPD:HKIPE:HKIPM:HKIPT:HKIPZ:HKTIA'",
+        "HIVOOS:8:1:4+1+1+0+N:HKCCM:HKCME:HKIPE:HKIPM'",
+        "HIVPAS:9:1:4+1+1+0'",
+        "HIAUBS:10:6:4+1+1+0+1'",
+        "HIAUBS:11:7:4+1+1+0+1'",
+        "HIAUPS:12:1:4+1+1+0+1::N::HOLD;TELE;PHOB;TELB:N'",
+        "HIBAZS:13:1:4+1+1+0+N:N:N'",
+        "HIBMES:14:1:4+1+1+0+2:28:2:28:1000:N:J'",
+        "HIBSES:15:1:4+1+1+0+2:28:2:28'",
+        "HICAZS:16:1:4+1+1+0+450:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02'",
+        "HICCMS:17:1:4+1+1+0+1000:N:J'",
+        "HICCSS:18:1:4+1+1+0'",
+        "HICDBS:19:1:4+1+1+0+N'",
+        "HICDBS:20:2:4+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HICDES:21:1:4+1+1+0+1:1:30:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICDLS:22:1:4+1+1+0+1:30:N:N'",
+        "HICDLS:23:2:4+1+1+0+1:30:N:N'",
+        "HICDNS:24:1:4+1+1+0+0:0:30:N:N:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICMES:25:1:4+1+1+0+1:360:1000:N:J'",
+        "HICSAS:26:1:4+1+1+0+1:360'",
+        "HICSBS:27:1:4+1+1+0+N:N'",
+        "HICSES:28:1:4+1+1+0+1:360'",
+        "HICSLS:29:1:4+1+1+0+N'",
+        "HIDMES:30:1:4+1+1+0+2:28:2:28:1000:N:J'",
+        "HIDSBS:31:1:4+1+1+0+N:N:56'",
+        "HIDSES:32:1:4+1+1+0+2:28:2:28'",
+        "HIDSWS:33:1:4+1+1+0+J'",
+        "HIEKPS:34:1:4+1+1+0+N:N:J'",
+        "HIEKPS:35:2:4+1+1+0+N:N:J:N'",
+        "HIFRDS:36:3:4+1+1+0+N'",
+        "HIIDAS:37:1:4+1+1+0+0:1::30:J:J:J:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPDS:38:1:4+1+1+0+1::30:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:39:1:4+1+1+0+1::30:1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:40:2:4+1+1+0+1::30:1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:41:1:4+1+1+0+1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:42:2:4+1+1+0+1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPSS:43:1:4+1+1+0+5'",
+        "HIIPTS:44:1:4+1+1+0+0:1410:30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:45:1:4+1+1+0+:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:46:2:4+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIISSS:47:1:4+1+1+0+5:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10'",
+        "HIKAAS:48:1:4+1+1+0+N:N:N:N:4;PDF;1'",
+        "HIKAAS:49:2:4+1+1+0+N:N:N:N:N:4;PDF;1'",
+        "HIKAZS:50:6:4+1+1+0+360:N:N'",
+        "HIKAZS:51:7:4+1+1+0+360:N:N'",
+        "HIKIFS:52:2:4+1+1+0'",
+        "HIKIFS:53:3:4+1+1+0'",
+        "HIKIFS:54:4:4+1+1+0+N:N'",
+        "HIPAES:55:1:4+1+1+0'",
+        "HIPOFS:56:1:4+1+1+0+N:J:000;Dokument'",
+        "HIPOFS:57:2:4+1+1+0+N:J:N:N:N:000;Dokument'",
+        "HIQTGS:58:1:4+1+1+0'",
+        "HISALS:59:6:4+1+1+0'",
+        "HISALS:60:7:4+1+1+0'",
+        "HISALS:61:8:4+1+1+0+N'",
+        "HITIAS:62:1:4+1+1+0+1::30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HITSYS:63:1:4+1+1+0+N:N'",
+        "HIWPDS:64:6:4+1+1+0+N:N:N'",
+        "HIWDUS:65:5:4+1+1+0+90'",
+        "HIWSOS:66:3:4+1+1+0+J:90'",
+        "HIWSOS:67:4:4+1+1+0+J:N:90'",
+        "HIWSOS:68:5:4+1+1+0+J:N:90'",
+        "HIZDFS:69:1:4+1+1+0+90'",
+        "HIZDLS:70:1:4+1+1+0'",
+        "HISPAS:71:1:4+1+1+0+N:J:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:72:2:4+1+1+0+N:J:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:73:3:4+1+1+0+N:J:N:N:0:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HITABS:74:4:4+1+1+0'",
+        "HITABS:75:5:4+1+1+0'",
+        "HIPINS:76:1:4+1+1+0+5:38:6:Anmeldename:Anmeldename:HKTAN:N:HKVPP:N:HKVOO:N:HKVPA:N:HKAUB:J:HKAUP:J:HKBAZ:J:HKBME:J:HKBSE:J:HKCAZ:J:HKCCM:J:HKCCS:J:HKCDB:J:HKCDE:J:HKCDL:J:HKCDN:J:HKCME:J:HKCSA:J:HKCSB:J:HKCSE:J:HKCSL:J:HKDME:J:HKDSB:J:HKDSE:J:HKDSW:J:HKEKP:N:HKFRD:J:HKIDA:J:HKIPD:J:HKIPE:J:HKIPM:J:HKIPS:N:HKIPT:J:HKIPZ:J:HKISS:N:HKKAA:J:HKKAZ:J:HKKIF:J:HKPAE:J:HKPOF:N:HKQTG:J:HKSAL:J:HKTIA:J:HKTSY:N:HKWPD:N:HKWDU:N:HKWSO:N:HKZDF:J:HKZDL:J:HKSPA:J:HKTAB:N'",
+        "HITANS:77:6:4+1+1+0+N:N:0:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HITANS:78:7:4+1+1+0+N:N:0:940:2:SealOne:Decoupled::DKB App:::DKB App:2048:N:1:N:0:0:N:J:00:0:N::999:5:3:J:J:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N:::::::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HISYN:79:4:5+OyYfFVqr?+G9kD265LxB25w'",
+        "'",
+        "HNHBS:80:1+1'"
+      ]
+    },
+    {
+      "index": 1,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000409+300+DIALOG0001+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::OyYfFVqr?+G9kD265LxB25w+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@176@",
+        "HNSHK:2:4+PIN:2+940+7301419+1+1+1::OyYfFVqr?+G9kD265LxB25w+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKEND:3:1+DIALOG0001'",
+        "HNSHA:4:2+7301419++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000283+300+DIALOG0001+2+DIALOG0001:2'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@64@",
+        "HIRMG:2:2+0100::Dialog beendet'",
+        "HIRMS:3:2:3+0100::Dialog beendet'",
+        "'",
+        "HNHBS:4:1+2'"
+      ]
+    },
+    {
+      "index": 2,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKIDN"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKTAN",
+            "code": "3955",
+            "text": "Sicherheitsfreigabe erfolgt über anderen Kanal"
+          },
+          {
+            "job": "HKTAN",
+            "code": "0030",
+            "text": "Auftrag empfangen - Sicherheitsfreigabe erforderlich"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000466+300+0+1'",
+        "HNVSK:998:3+PIN:2+998+1+1::OyYfFVqr?+G9kD265LxB25w+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@282@",
+        "HNSHK:2:4+PIN:2+940+3447539+1+1+1::OyYfFVqr?+G9kD265LxB25w+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKIDN:3:2+280:12030000+3810313958_o+OyYfFVqr?+G9kD265LxB25w+1'",
+        "HKVVB:4:3+33+0+1+*************************+1.0'",
+        "HKTAN:5:7+4+HKIDN'",
+        "HNSHA:6:2+3447539++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000526+300+DIALOG0002+1+DIALOG0002:1'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@286@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:5+3955::Sicherheitsfreigabe erfolgt über anderen Kanal+0030::Auftrag empfangen - Sicherheitsfreigabe erforderlich'",
+        "HITAN:4:7:5+4++DIALOG0002+*********************************+++*****************'",
+        "'",
+        "HNHBS:5:1+1'"
+      ]
+    },
+    {
+      "index": 3,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [],
+        "tan": {
+          "process": "S",
+          "for": ""
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKTAN",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          },
+          {
+            "job": "HKTAN",
+            "code": "0900",
+            "text": "TAN gültig"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000416+300+DIALOG0002+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::OyYfFVqr?+G9kD265LxB25w+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@183@",
+        "HNSHK:2:4+PIN:2+940+3882615+1+1+1::OyYfFVqr?+G9kD265LxB25w+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKTAN:3:7+S++++DIALOG0002+N'",
+        "HNSHA:4:2+3882615++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000007276+300+DIALOG0002+2+DIALOG0002:2'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@6996@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:940+0900::TAN gültig'",
+        "HITAN:4:7:3+S++DIALOG0002'",
+        "HIBPA:5:3:3+33+280:12030000+Deutsche Kreditbank Aktiengesellschaft+1+1+300'",
+        "HIKOM:6:4:3+280:12030000+1+3:https?://fints.dkb.de/fints'",
+        "HIVPPS:7:1:3+1+1+0+1000:N:V:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10:HKCCM:HKCCS:HKCDE:HKCDN:HKCME:HKCSA:HKCSE:HKIDA:HKIPD:HKIPE:HKIPM:HKIPT:HKIPZ:HKTIA'",
+        "HIVOOS:8:1:3+1+1+0+N:HKCCM:HKCME:HKIPE:HKIPM'",
+        "HIVPAS:9:1:3+1+1+0'",
+        "HIAUBS:10:6:3+1+1+0+1'",
+        "HIAUBS:11:7:3+1+1+0+1'",
+        "HIAUPS:12:1:3+1+1+0+1::N::HOLD;TELE;PHOB;TELB:N'",
+        "HIBAZS:13:1:3+1+1+0+N:N:N'",
+        "HIBMES:14:1:3+1+1+0+2:28:2:28:1000:N:J'",
+        "HIBSES:15:1:3+1+1+0+2:28:2:28'",
+        "HICAZS:16:1:3+1+1+0+450:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02'",
+        "HICCMS:17:1:3+1+1+0+1000:N:J'",
+        "HICCSS:18:1:3+1+1+0'",
+        "HICDBS:19:1:3+1+1+0+N'",
+        "HICDBS:20:2:3+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HICDES:21:1:3+1+1+0+1:1:30:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICDLS:22:1:3+1+1+0+1:30:N:N'",
+        "HICDLS:23:2:3+1+1+0+1:30:N:N'",
+        "HICDNS:24:1:3+1+1+0+0:0:30:N:N:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICMES:25:1:3+1+1+0+1:360:1000:N:J'",
+        "HICSAS:26:1:3+1+1+0+1:360'",
+        "HICSBS:27:1:3+1+1+0+N:N'",
+        "HICSES:28:1:3+1+1+0+1:360'",
+        "HICSLS:29:1:3+1+1+0+N'",
+        "HIDMES:30:1:3+1+1+0+2:28:2:28:1000:N:J'",
+        "HIDSBS:31:1:3+1+1+0+N:N:56'",
+        "HIDSES:32:1:3+1+1+0+2:28:2:28'",
+        "HIDSWS:33:1:3+1+1+0+J'",
+        "HIEKPS:34:1:3+1+1+0+N:N:J'",
+        "HIEKPS:35:2:3+1+1+0+N:N:J:N'",
+        "HIFRDS:36:3:3+1+1+0+N'",
+        "HIIDAS:37:1:3+1+1+0+0:1::30:J:J:J:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPDS:38:1:3+1+1+0+1::30:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:39:1:3+1+1+0+1::30:1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:40:2:3+1+1+0+1::30:1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:41:1:3+1+1+0+1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:42:2:3+1+1+0+1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPSS:43:1:3+1+1+0+5'",
+        "HIIPTS:44:1:3+1+1+0+0:1410:30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:45:1:3+1+1+0+:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:46:2:3+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIISSS:47:1:3+1+1+0+5:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10'",
+        "HIKAAS:48:1:3+1+1+0+N:N:N:N:4;PDF;1'",
+        "HIKAAS:49:2:3+1+1+0+N:N:N:N:N:4;PDF;1'",
+        "HIKAZS:50:6:3+1+1+0+360:N:N'",
+        "HIKAZS:51:7:3+1+1+0+360:N:N'",
+        "HIKIFS:52:2:3+1+1+0'",
+        "HIKIFS:53:3:3+1+1+0'",
+        "HIKIFS:54:4:3+1+1+0+N:N'",
+        "HIPAES:55:1:3+1+1+0'",
+        "HIPOFS:56:1:3+1+1+0+N:J:000;Dokument'",
+        "HIPOFS:57:2:3+1+1+0+N:J:N:N:N:000;Dokument'",
+        "HIQTGS:58:1:3+1+1+0'",
+        "HISALS:59:6:3+1+1+0'",
+        "HISALS:60:7:3+1+1+0'",
+        "HISALS:61:8:3+1+1+0+N'",
+        "HITIAS:62:1:3+1+1+0+1::30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HITSYS:63:1:3+1+1+0+N:N'",
+        "HIWPDS:64:6:3+1+1+0+N:N:N'",
+        "HIWDUS:65:5:3+1+1+0+90'",
+        "HIWSOS:66:3:3+1+1+0+J:90'",
+        "HIWSOS:67:4:3+1+1+0+J:N:90'",
+        "HIWSOS:68:5:3+1+1+0+J:N:90'",
+        "HIZDFS:69:1:3+1+1+0+90'",
+        "HIZDLS:70:1:3+1+1+0'",
+        "HISPAS:71:1:3+1+1+0+N:J:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:72:2:3+1+1+0+N:J:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:73:3:3+1+1+0+N:J:N:N:0:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HITABS:74:4:3+1+1+0'",
+        "HITABS:75:5:3+1+1+0'",
+        "HIPINS:76:1:3+1+1+0+5:38:6:Anmeldename:Anmeldename:HKTAN:N:HKVPP:N:HKVOO:N:HKVPA:N:HKAUB:J:HKAUP:J:HKBAZ:J:HKBME:J:HKBSE:J:HKCAZ:J:HKCCM:J:HKCCS:J:HKCDB:J:HKCDE:J:HKCDL:J:HKCDN:J:HKCME:J:HKCSA:J:HKCSB:J:HKCSE:J:HKCSL:J:HKDME:J:HKDSB:J:HKDSE:J:HKDSW:J:HKEKP:N:HKFRD:J:HKIDA:J:HKIPD:J:HKIPE:J:HKIPM:J:HKIPS:N:HKIPT:J:HKIPZ:J:HKISS:N:HKKAA:J:HKKAZ:J:HKKIF:J:HKPAE:J:HKPOF:N:HKQTG:J:HKSAL:J:HKTIA:J:HKTSY:N:HKWPD:N:HKWDU:N:HKWSO:N:HKZDF:J:HKZDL:J:HKSPA:J:HKTAB:N'",
+        "HITANS:77:6:3+1+1+0+N:N:0:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HITANS:78:7:3+1+1+0+N:N:0:940:2:SealOne:Decoupled::DKB App:::DKB App:2048:N:1:N:0:0:N:J:00:0:N::999:5:3:J:J:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N:::::::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HIUPA:79:4:3+3810313958_o+0+0'",
+        "HIUPD:80:6:3+5192726986:******************************:280:12030000+DE78120300005192726986+3810313958_o+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCM:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCME:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:81:6:3+5192726987:******************************:280:12030000+DE51120300005192726987+3810313958_o+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCM:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCME:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:82:6:3+5192726988:******************************:280:12030000+DE24120300005192726988+3810313958_o+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:83:6:3+5192726989:******************************:280:12030000+DE94120300005192726989+3810313958_o+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:84:6:3+1153922192726990:******************************:280:12030000++3810313958_o+50+EUR+########+########+########++HKCAZ:1+HKEKP:1+HKFRD:1+HKKAA:1+HKKAZ:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTSY:1+HKTAB:1'",
+        "'",
+        "HNHBS:85:1+2'"
+      ]
+    },
+    {
+      "index": 4,
+      "account": "#3",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKVPP:1",
+          "HKCCS:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCCS"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKVPP",
+            "code": "3090",
+            "text": "Ergebnis Namensabgleich prüfen"
+          },
+          {
+            "job": "HKTAN",
+            "code": "3945",
+            "text": "Freigabe erst nach Empfängerabgleich möglich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000002140+300+DIALOG0002+3'",
+        "HNVSK:998:3+PIN:2+998+1+1::OyYfFVqr?+G9kD265LxB25w+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@1834@",
+        "HNSHK:2:4+PIN:2+940+5396478+1+1+1::OyYfFVqr?+G9kD265LxB25w+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKVPP:3:1+urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10'",
+        "HKCCS:4:1+DE24120300005192726988:BYLADEM1001:5192726988:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09+@1436@<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:pain.001.001.09\">\n  <CstmrCdtTrfInitn>\n    <GrpHdr>\n      <MsgId>GIK5Z3RQMUIV</MsgId>\n      <CreDtTm>########</CreDtTm>\n      <NbOfTxs>#</NbOfTxs>\n      <CtrlSum>#.##</CtrlSum>\n      <InitgPty>\n        <Nm>########</Nm>\n      </InitgPty>\n    </GrpHdr>\n    <PmtInf>\n      <PmtInfId>RGEAQHVQOI6B</PmtInfId>\n      <PmtMtd>########</PmtMtd>\n      <NbOfTxs>#</NbOfTxs>\n      <CtrlSum>#.##</CtrlSum>\n      <PmtTpInf>\n        <SvcLvl>\n          <Cd>SEPA</Cd>\n        </SvcLvl>\n      </PmtTpInf>\n      <ReqdExctnDt>\n        <Dt>########</Dt>\n      </ReqdExctnDt>\n      <Dbtr>\n        <Nm>########</Nm>\n      </Dbtr>\n      <DbtrAcct>\n        <Id>\n          <IBAN>DE24120300005192726988</IBAN>\n        </Id>\n      </DbtrAcct>\n      <DbtrAgt>\n        <FinInstnId>\n          <BICFI>########</BICFI>\n        </FinInstnId>\n      </DbtrAgt>\n      <ChrgBr>########</ChrgBr>\n      <CdtTrfTxInf>\n        <PmtId>\n          <EndToEndId>3QH40P4ZPVZ0</EndToEndId>\n        </PmtId>\n        <Amt>\n          <InstdAmt Ccy=\"EUR\">#.##</InstdAmt>\n        </Amt>\n        <Cdtr>\n          <Nm>########</Nm>\n        </Cdtr>\n        <CdtrAcct>\n          <Id>\n            <IBAN>DE15000000002192726991</IBAN>\n          </Id>\n        </CdtrAcct>\n        <RmtInf>\n          <Ustrd>########</Ustrd>\n        </RmtInf>\n      </CdtTrfTxInf>\n    </PmtInf>\n  </CstmrCdtTrfInitn>\n</Document>\n'",
+        "HKTAN:5:7+4+HKCCS'",
+        "HNSHA:6:2+5396478++********'",
+        "'",
+        "HNHBS:7:1+3'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001253+300+DIALOG0002+3+DIALOG0002:3'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@621@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3090::Ergebnis Namensabgleich prüfen'",
+        "HIRMS:4:2:5+3945::Freigabe erst nach Empfängerabgleich möglich.'",
+        "HIVPP:5:1:3+@364@ChPcVwY11gPw+1TgLjgFnGwa5bS7IfUUbHtNcm8bPkfUT1+I+hiaksU4YuRHrkYRj6gvoz25MFbSFX7K8lFRpjxF8L/jH37Iw9lgPjdBHVRuZPf8CfVYEC8K3ZF3TH/M3gP+Le4do0eJbTDgeI4UAo1/DEjsGs8fzLYvrJEvfhGBCVPRsiKIZ1/AenYHC8ZhyAnFBBT8vsgsSvu8i+5EY9m6PfKy7tZ5jVO78LzAenl9bguq4ApwYhxl8myx+XidaUie/uIj2FOnaT6SQl2/N/RYI2Bt9xnCgXuz7U8bV4lVcGzaZK/iZlS4Fi3Z9OQBd+T0uUoUvARO/5rlX0rwO9f5swbug59QC33k+24wCU0=+++++DE15000000002192726991::::RVNM+########'",
+        "'",
+        "HNHBS:6:1+3'"
+      ]
+    },
+    {
+      "index": 5,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000409+300+DIALOG0002+4'",
+        "HNVSK:998:3+PIN:2+998+1+1::OyYfFVqr?+G9kD265LxB25w+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:3810313958_o:V:0:0+0'",
+        "HNVSD:999:1+@176@",
+        "HNSHK:2:4+PIN:2+940+4868222+1+1+1::OyYfFVqr?+G9kD265LxB25w+1+1:20261021:120000+1:999:1+6:10:16+280:12030000:3810313958_o:S:0:0'",
+        "HKEND:3:1+DIALOG0002'",
+        "HNSHA:4:2+4868222++********'",
+        "'",
+        "HNHBS:5:1+4'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000283+300+DIALOG0002+4+DIALOG0002:4'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261021:120000+2:2:13:@8@********:5:1+280:12030000:68162923:V:0:0+0'",
+        "HNVSD:999:1+@64@",
+        "HIRMG:2:2+0100::Dialog beendet'",
+        "HIRMS:3:2:3+0100::Dialog beendet'",
+        "'",
+        "HNHBS:4:1+4'"
+      ]
+    }
+  ]
+}

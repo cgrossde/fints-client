@@ -1,0 +1,25 @@
+[package]
+name = "fints-client-testbank"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+description = "Offline synthetic FinTS 3.0 PIN/TAN bank for fints-client's end-to-end tests"
+license = "MIT"
+
+[lib]
+name = "fints_client_testbank"
+path = "src/lib.rs"
+
+[dependencies]
+fints-client = { path = "..", version = "0.1.0", features = ["testbank", "trace", "tooling"] }
+base64 = "0.22"
+# Local wall clock needs the system zoneinfo (see the root Cargo.toml).
+jiff = { version = "1", default-features = false, features = ["std", "serde", "tz-system", "tzdb-zoneinfo", "tzdb-bundle-platform"] }
+quick-xml = "0.41"
+rust_decimal = "1.35"
+tokio = { version = "1", features = ["net", "io-util", "rt", "sync", "macros", "time"] }
+
+[[bin]]
+name = "fints-testbank"
+path = "src/bin/fints-testbank.rs"

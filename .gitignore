@@ -1,0 +1,11 @@
+/target
+**/__pycache__/
+*.pyc
+*.dump
+/dumps/
+.env
+
+# FinTS specification PDFs, downloaded locally (see docs/spec-sources.md)
+/spec/
+# Live traces stay local until a human has reviewed them (docs/trace-tooling.md).
+/testbank/fixtures/replay/local/

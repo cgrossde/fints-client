@@ -1,0 +1,20 @@
+[package]
+name = "fints-client-derive"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+description = "Derive macros for fints-client's declarative FinTS segment definitions"
+license = "MIT"
+repository = "https://github.com/cgrossde/fints-client"
+documentation = "https://docs.rs/fints-client-derive"
+readme = "README.md"
+keywords = ["fints", "hbci", "banking", "derive"]
+categories = ["finance", "development-tools::procedural-macro-helpers"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+quote = "1"
+syn = { version = "2", default-features = false, features = ["clone-impls", "derive", "parsing", "printing", "proc-macro"] }

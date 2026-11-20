@@ -1,0 +1,177 @@
+//! # fints-client: a FinTS 3.0 PIN/TAN client
+//!
+//! FinTS (formerly HBCI) is the online-banking protocol of German banks.
+//! This crate reads balances, transactions and securities holdings, and
+//! sends SEPA and instant transfers with the payee name check
+//! (Verification of Payee).
+//!
+//! Banks answer only clients registered with the Deutsche Kreditwirtschaft:
+//! register your app at <https://www.fints.org/de/hersteller/produktregistrierung>
+//! and pass its product ID to [`jobs::BankClient::new`]. The crate ships
+//! with no product ID.
+//!
+//! ## Quick start
+//!
+//! Every operation is `async`. The default `http` transport is reqwest and
+//! needs a tokio runtime.
+//!
+//! ```rust,no_run
+//! use fints_client::jobs::{self, BankClient, Credentials, Step, TanKind};
+//! use fints_client::{bank_by_blz, jiff::Timestamp, Pin, ProductId, SessionState, UserId};
+//!
+//! # fn read_tan() -> String { String::new() }
+//! # async fn example() -> Result<(), Box<dyn std::error::Error>> {
+//! let config = bank_by_blz("12030000").expect("BLZ in the bank directory"); // DKB
+//! let client = BankClient::new(config, ProductId::new("YOUR-PRODUCT-ID"));
+//! let user = UserId::new("user");
+//! let creds = Credentials::new(user.clone(), Pin::new("pin"));
+//! let state = SessionState::new(&client.config().blz, &user); // or SessionState::from_json(stored)
+//!
+//! // Open the dialog. A bank that wants a TAN answers `NeedTan`.
+//! let (mut dialog, mut step) = jobs::open(&client, &creds, &state).await?;
+//! let opened = loop {
+//!     match step {
+//!         Step::Done(done) => break done.value,
+//!         Step::NeedTan(challenge, resume) => {
+//!             println!("{}", challenge.challenge);
+//!             step = match challenge.kind {
+//!                 // App approval: wait as long as the bank asks, then ask once.
+//!                 TanKind::Decoupled { .. } => {
+//!                     if let Some(at) = challenge.not_before {
+//!                         let wait = at.duration_since(Timestamp::now());
+//!                         tokio::time::sleep(wait.try_into().unwrap_or_default()).await;
+//!                     }
+//!                     dialog.poll(resume).await?
+//!                 }
+//!                 // chipTAN, smsTAN, photoTAN: the user types the TAN.
+//!                 TanKind::Typed { .. } => dialog.submit_tan(resume, &read_tan()).await?,
+//!             };
+//!         }
+//!         _ => unreachable!("only a transfer pauses on its payee check"),
+//!     }
+//! };
+//!
+//! let account = opened.accounts[0].account()?;
+//! if let Step::Done(balance) = jobs::balance(&mut dialog, &account).await? {
+//!     println!("{:?}", balance.value);
+//! }
+//! let state = dialog.end().await?;
+//! std::fs::write("state.json", state.to_json()?)?; // encrypt this in a real app
+//! # Ok(())
+//! # }
+//! ```
+//!
+//! ## Steps instead of callbacks
+//!
+//! Every job in [`jobs`] returns a [`jobs::Step`]: `Done` with the value,
+//! or a pause with a resume handle. `NeedTan` carries a
+//! [`jobs::TanChallenge`]; its [`jobs::TanKind`] says how to answer:
+//!
+//! - **Typed** (chipTAN, smsTAN, photoTAN): the user types the TAN, you call
+//!   [`jobs::Dialog::submit_tan`]. A flicker code or photoTAN image comes in
+//!   `media` for you to render.
+//! - **Decoupled** (app approval): sleep until `not_before`, then call
+//!   [`jobs::Dialog::poll`]; repeat while the bank says it is still waiting.
+//!   When `auto_polling_allowed` is `Some(false)`, poll only when the user
+//!   asks (a button), not on a timer.
+//!
+//! A [`jobs::transfer`] may also pause on its payee check
+//! (`NeedVopConfirmation`). The library never sleeps and never calls back.
+//! A paused dialog can be frozen into a serialisable value and thawed in a
+//! new process ([`jobs::Dialog::freeze`]). [`jobs::synchronise`] learns the
+//! allowed TAN methods without a login, so the user can choose one before
+//! `open`.
+//!
+//! ## Banks
+//!
+//! [`bank_by_blz`] looks a bank up in the bank directory by its BLZ
+//! (Bankleitzahl: the German bank code, characters 5 to 12 of the IBAN) and
+//! returns a [`BankConfig`] with its server and profile. A bank's own
+//! behaviour lives in its [`BankProfile`], not in code paths.
+//!
+//! ## Cargo features
+//!
+//! - `http` (default): `HttpTransport` (reqwest with rustls), the default
+//!   transport of a [`jobs::Dialog`]. Without it you supply the transport.
+//! - `trace`: `Recorder` and `Trace`, masked recordings of dialogs.
+//! - `testbank`: registers the synthetic test bank (BLZ 12345678 on
+//!   localhost) as a known bank.
+//! - `tooling`: the protocol internals (`codec`, `protocol`, `types`) for
+//!   the test bank and wire-level tests. Applications use `jobs`.
+//!
+//! ## Dates
+//!
+//! Dates and timestamps in the API are [`jiff`] types. The crate re-exports
+//! `jiff` so a caller can name the version this crate uses.
+
+#![cfg_attr(docsrs, feature(doc_cfg))]
+
+// Lets code generated by `fints-client-derive` name `::fints_client` inside
+// this crate as well.
+extern crate self as fints_client;
+
+// ── Infrastructure ──
+pub mod banks;
+pub mod camt;
+#[cfg(feature = "tooling")]
+pub mod codec;
+#[cfg(not(feature = "tooling"))]
+#[allow(unused, dead_code)]
+pub(crate) mod codec;
+pub mod error;
+pub mod formats;
+pub mod mask;
+pub(crate) mod message;
+#[cfg_attr(not(feature = "tooling"), allow(dead_code))]
+pub(crate) mod parser;
+pub mod return_code;
+pub(crate) mod segments;
+#[cfg(feature = "tooling")]
+pub mod types;
+#[cfg(not(feature = "tooling"))]
+#[allow(unused, dead_code)]
+pub(crate) mod types;
+
+// ── Architecture ──
+pub mod jobs;
+#[cfg(feature = "tooling")]
+pub mod protocol;
+#[cfg(not(feature = "tooling"))]
+#[allow(unused, dead_code)]
+pub(crate) mod protocol;
+pub mod quirks;
+pub mod session;
+#[cfg(feature = "trace")]
+pub mod trace;
+pub mod transport;
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// Re-exports
+// ═══════════════════════════════════════════════════════════════════════════════
+
+pub use jiff;
+
+// Protocol types that public signatures name
+pub use protocol::{
+    Account, AccountLimit, Allowance, FormatLists, LimitKind, TanOverride, TanOverrides,
+    VersionMismatch,
+};
+
+// Domain types
+pub use banks::{
+    BankConfig, BankProfile, BookingIdSource, InitMode, ProfileId, all_banks, bank_by_blz,
+};
+pub use error::{AddressingReason, BankError, FinTSError, Result, TransportKind};
+pub use jobs::{
+    CheckedTransfer, Instant, InvalidReason, InvalidTransfer, PayeeOutcome, PayeeResult, Transfer,
+    TransferField, VopResult,
+};
+pub use return_code::{Category, ClientWarning, Notice, NoticeDialog, ReturnCode};
+pub use session::SessionState;
+pub use types::{
+    AccountBalance, AccountClass, AccountKey, AccountKeyError, BankName, BankTime, Bic, Blz,
+    ChallengeText, ClassSource, Currency, DepotTransaction, DepotTransactionDirection, FinTSUrl,
+    Iban, Isin, Pin, ProductId, SecurityFunction, SecurityHolding, SegmentType, SystemId, TanMedia,
+    TanMediumName, TanMethod, TanProcess, TouchdownPoint, Transaction, TransactionStatus, UserId,
+    Wkn,
+};

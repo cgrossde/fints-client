@@ -1,0 +1,12 @@
+fints-client
+Copyright (c) 2026 Christoph Gross
+
+fints-client began as a fork of fints-rs (MIT),
+https://github.com/floffel/fints-rs, Copyright (c) 2025 Florian Minnecker
+and contributors, including the forks by fxb and nikolas-sturm (their
+MIT-licensed parts only). It has since been rewritten; its design and
+structure remain, under the MIT licence in LICENSE.
+
+The bank directory data/fints_institutes.csv is a copy of the
+FinTS-Bankenliste of Deutsche Kreditwirtschaft (SIZ GmbH), taken over with
+fints-rs; its source is recorded in docs/spec-sources.md, "Bank directory".

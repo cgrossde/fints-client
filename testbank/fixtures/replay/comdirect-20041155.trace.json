@@ -1,0 +1,506 @@
+{
+  "format": "fints-client-trace/4",
+  "comment": [
+    "Recorded with examples/record_trace.rs at BLZ 20041155, 30 days, 7 exchanges.",
+    "Masked by the library, anonymised by Trace::from_exchanges."
+  ],
+  "client": {
+    "version": "0.1.0",
+    "outcome": "completed"
+  },
+  "bank": {
+    "blz": "20041155",
+    "bic": "COBADEHD055"
+  },
+  "accounts": [
+    {
+      "alias": "#1",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKSAK",
+        "HKISA",
+        "HKSSP",
+        "HKSAL",
+        "HKKAZ",
+        "HKCAZ",
+        "HKIPM",
+        "HKISS",
+        "HKCUB",
+        "HKCUI",
+        "HKIPZ",
+        "HKIPS",
+        "HKCCS",
+        "HKTAN",
+        "HKFRD",
+        "HKSPA"
+      ]
+    },
+    {
+      "alias": "#2",
+      "class": "depot",
+      "kontoart": null,
+      "jobs": [
+        "HKSAK",
+        "HKISA",
+        "HKSSP",
+        "HKWPD",
+        "HKTAN",
+        "HKFRD",
+        "HKSPA"
+      ]
+    }
+  ],
+  "exchanges": [
+    {
+      "index": 0,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3",
+          "HKSYN:3"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Bitte beachten Sie die enthaltenen Warnungen/Hinweise."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSYN",
+            "code": "0020",
+            "text": "Auftrag ausgefuehrt."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3050",
+            "text": "BPD nicht mehr aktuell, aktuelle Version enthalten."
+          },
+          {
+            "job": "HKVVB",
+            "code": "0020",
+            "text": "Dialog initialisiert."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Verfügbare TAN-Verfahren: photoTAN."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000382+300+0+1'",
+        "HNVSK:998:3+PIN:1+998+1+1::0+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@223@",
+        "HNSHK:2:4+PIN:1+999+3171097+1+1+1::0+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKIDN:3:2+280:20041155+40001306+0+1'",
+        "HKVVB:4:3+0+0+1+*************************+1.0'",
+        "HKSYN:5:3+0'",
+        "HNSHA:6:2+3171097++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000003257+300+DIALOG0001+1+DIALOG0001:1'",
+        "HNVSK:998:3+PIN:1+998+1+2::0+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@3035@",
+        "HNSHK:2:4+PIN:1+999+3171097+1+1+2::0+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+3060::Bitte beachten Sie die enthaltenen Warnungen/Hinweise.'",
+        "HIRMS:4:2:5+0020::Auftrag ausgefuehrt.'",
+        "HIRMS:5:2:4+3050::BPD nicht mehr aktuell, aktuelle Version enthalten.+0020::Dialog initialisiert.+3920::Verfügbare TAN-Verfahren?: photoTAN.:902'",
+        "HIBPA:6:3:4+57+280:20041155+comdirect bank+10+1+300+200'",
+        "HIKOM:7:4:4+280:20041155+1+3:https?://fints.comdirect.de/fints/'",
+        "HISHV:8:3:4+J+PIN:1'",
+        "HIVPPS:9:1:4+1+1+0+20:J:S:N:N:sepade.pain.002.001.10.xsd:HKIPZ:HKCUI:HKCCS:HKCDE:HKCDN:HKCSE:HKCSA:HKIPM:HKCCM'",
+        "HIVPAS:10:1:4+1+1+0'",
+        "HIFGBS:11:3:4+999+1'",
+        "HIFRDS:12:1:4+999+1'",
+        "HIKAZS:13:5:4+999+1+540:J:N'",
+        "HISALS:14:5:4+999+1'",
+        "HIWPDS:15:5:4+999+1+J:J:J'",
+        "DIKKSS:16:3:4+999+1+0'",
+        "DIKKUS:17:2:4+999+1+0+9999:J:J'",
+        "DIKAUS:18:2:4+999+1+0+J'",
+        "HICAZS:19:1:4+999+1+0+9999:J:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02.xsd'",
+        "HISPAS:20:1:4+999+0+0+N:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.03.xsd'",
+        "HICUBS:21:1:4+999+1+0+J'",
+        "HIIPZS:22:1:4+999+1+0+BENE,BONU,CBFF,CHAR,GOVT,PENS,SALA,SSBE,RENT:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09.xsd:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.01:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.01.xsd'",
+        "HIIPSS:23:1:4+999+1+0+99:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09.xsd'",
+        "HIIPMS:24:1:4+999+1+0+20:N:BENE,BONU,CBFF,CHAR,GOVT,PENS,SALA,SSBE,RENT:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09.xsd'",
+        "HIISSS:25:1:4+999+1+0+99:sepade.pain.001.001.09.xsd;sepade.pain.001.001.09.xsd'",
+        "HICUIS:26:1:4+999+1+0+N:J:BENE,BONU,CBFF,CHAR,GOVT,PENS,SALA,SSBE,RENT:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09.xsd'",
+        "HICCSS:27:1:4+999+1+0'",
+        "HICCMS:28:1:4+999+1+0+20:N:N'",
+        "HICSES:29:1:4+999+1+0+1:365'",
+        "HICSAS:30:1:4+999+1+0+1:365'",
+        "HICSBS:31:1:4+999+1+0+N:N'",
+        "HICSLS:32:1:4+999+1+0+J'",
+        "HICDES:33:1:4+999+1+0+10:1:365:0102030612:010203040506070809101112131415161718192021222324252627282930:01:12345'",
+        "HICDBS:34:1:4+999+1+0+N'",
+        "HICDNS:35:1:4+999+1+0+0:1:365:J:J:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930:01:12345'",
+        "HICDUS:36:1:4+999+1+0+1:1:365:1:N:N'",
+        "HICDLS:37:1:4+999+1+0+1:1:N:N'",
+        "HITANS:38:6:4+1+1+1+N:N:0:901:2:TechnicalId901:::mobileTAN-Verfahren:6:1:Freigabe durch mobileTAN:1:N:4:N:0:0:N:N:00:0:N::902:2:MS1.0.0:::photoTAN-Verfahren:7:1:Freigabe durch photoTAN:1:N:4:N:0:0:N:N:00:0:N'",
+        "HIPINS:39:1:4+1+1+0+6:6:6:Zugangsnummer:Zugangsnummer:HKSAL:J:HKFGB:N:HKFRD:N:HKKAZ:J:HKWPD:N:HKCAZ:J:HKSPA:N:HKCCM:J:HKCCS:J:HKCUB:N:HKIPZ:J:HKIPS:N:HKIPM:J:HKISS:N:HKCUI:J:HKCSE:J:HKCSA:J:HKCSB:N:HKCSL:J:HKCDE:J:HKCDB:N:HKCDN:J:HKCDU:J:HKCDL:J:DKKKU:J:DKKKS:J:DKKAU:J:HKTAN:N'",
+        "HISYN:40:4:5+M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP'",
+        "HNSHA:41:2+3171097'",
+        "'",
+        "HNHBS:42:1+1'"
+      ]
+    },
+    {
+      "index": 1,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          },
+          {
+            "code": "0100",
+            "text": "Dialog beendet."
+          }
+        ],
+        "segments": []
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000410+300+DIALOG0001+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@178@",
+        "HNSHK:2:4+PIN:2+902+1750262+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKEND:3:1+DIALOG0001'",
+        "HNSHA:4:2+1750262++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000428+300+DIALOG0001+2+DIALOG0001:2'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@197@",
+        "HNSHK:2:4+PIN:2+902+1750262+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+0010::Nachricht entgegengenommen.+0100::Dialog beendet.'",
+        "HNSHA:4:2+1750262'",
+        "'",
+        "HNHBS:5:1+2'"
+      ]
+    },
+    {
+      "index": 2,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKIDN"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Bitte beachten Sie die enthaltenen Warnungen/Hinweise."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKVVB",
+            "code": "3050",
+            "text": "UPD nicht mehr aktuell, aktuelle Version enthalten."
+          },
+          {
+            "job": "HKVVB",
+            "code": "0020",
+            "text": "Dialog initialisiert."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Verfügbare TAN-Verfahren: photoTAN."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Starke Kundenauthentifizierung nicht notwendig."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000473+300+0+1'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@286@",
+        "HNSHK:2:4+PIN:2+902+4479450+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKIDN:3:2+280:20041155+40001306+M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1'",
+        "HKVVB:4:3+57+0+1+*************************+1.0'",
+        "HKTAN:5:6+4+HKIDN'",
+        "HNSHA:6:2+4479450++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001124+300+DIALOG0002+1+DIALOG0002:1'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@858@",
+        "HNSHK:2:4+PIN:2+902+4479450+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+3060::Bitte beachten Sie die enthaltenen Warnungen/Hinweise.'",
+        "HIRMS:4:2:4+3050::UPD nicht mehr aktuell, aktuelle Version enthalten.+0020::Dialog initialisiert.+3920::Verfügbare TAN-Verfahren?: photoTAN.:902'",
+        "HIRMS:5:2:5+3076::Starke Kundenauthentifizierung nicht notwendig.'",
+        "HIUPA:6:4:4+40001306+1+0'",
+        "HIUPD:7:6:4+186234590:*****************:280:20041155+DE81200411550186234590+40001306++EUR+########++########++HKSAK:1+HKISA:1+HKSSP:1+HKSAL:1+HKKAZ:1+HKCAZ:1+HKIPM:1+HKISS:1+HKCUB:1+HKCUI:1+HKIPZ:1+HKIPS:1+HKCCS:1+HKTAN:1+HKFRD:1+HKSPA:1'",
+        "HIUPD:8:6:4+186234590:*****:280:20041155++40001306++EUR+########++########++HKSAK:1+HKISA:1+HKSSP:1+HKWPD:1+HKTAN:1+HKFRD:1+HKSPA:1'",
+        "HITAN:9:6:5+4++noref+***********'",
+        "HNSHA:10:2+4479450'",
+        "'",
+        "HNHBS:11:1+1'"
+      ]
+    },
+    {
+      "index": 3,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:5"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Bitte beachten Sie die enthaltenen Warnungen/Hinweise."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Starke Kundenauthentifizierung nicht notwendig."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000442+300+DIALOG0002+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@228@",
+        "HNSHK:2:4+PIN:2+902+2471391+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKSAL:3:5+186234590:*****************:280:20041155+N'",
+        "HKTAN:4:6+4+HKSAL'",
+        "HNSHA:5:2+2471391++********'",
+        "'",
+        "HNHBS:6:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000708+300+DIALOG0002+2+DIALOG0002:2'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@448@",
+        "HNSHK:2:4+PIN:2+902+2471391+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+3060::Bitte beachten Sie die enthaltenen Warnungen/Hinweise.'",
+        "HIRMS:4:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:5:2:4+3076::Starke Kundenauthentifizierung nicht notwendig.'",
+        "HITAN:6:6:4+4++noref+***********'",
+        "HISAL:7:5:3+186234590:*****************:280:20041155+########+EUR+C:#,##:EUR:20261021:120000'",
+        "HNSHA:8:2+2471391'",
+        "'",
+        "HNHBS:9:1+2'"
+      ]
+    },
+    {
+      "index": 4,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Bitte beachten Sie die enthaltenen Warnungen/Hinweise."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Starke Kundenauthentifizierung nicht notwendig."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000508+300+DIALOG0002+3'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@294@",
+        "HNSHK:2:4+PIN:2+902+3374901+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKCAZ:3:1+DE81200411550186234590:COBADEHD055+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02+N+20260921+20261021'",
+        "HKTAN:4:6+4+HKCAZ'",
+        "HNSHA:5:2+3374901++********'",
+        "'",
+        "HNHBS:6:1+3'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000008591+300+DIALOG0002+3+DIALOG0002:3'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@8037@",
+        "HNSHK:2:4+PIN:2+902+3374901+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+3060::Bitte beachten Sie die enthaltenen Warnungen/Hinweise.'",
+        "HIRMS:4:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:5:2:4+3076::Starke Kundenauthentifizierung nicht notwendig.'",
+        "HITAN:6:6:4+4++noref+***********'",
+        "HICAZ:7:1:3+DE81200411550186234590:COBADEHD055+camt.052.001.08+@7612@<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\">\n    <BkToCstmrAcctRpt>\n        <GrpHdr>\n            <MsgId>0WSX3DKNJMFT</MsgId>\n            <CreDtTm>2026-10-21T12:00:00.000+00:00</CreDtTm>\n            <MsgPgntn>\n                <PgNb>#</PgNb>\n                <LastPgInd>true</LastPgInd>\n            </MsgPgntn>\n        </GrpHdr>\n        <Rpt>\n            <Id>########</Id>\n            <FrToDt>\n                <FrDtTm>2026-09-21T12:00:00.000+00:00</FrDtTm>\n                <ToDtTm>2026-10-21T12:00:00.000+00:00</ToDtTm>\n            </FrToDt>\n            <Acct>\n                <Id>\n                    <IBAN>DE81200411550186234590</IBAN>\n                </Id>\n            </Acct>\n            <Bal>\n                <Tp>\n                    <CdOrPrtry>\n                        <Cd>OPBD</Cd>\n                    </CdOrPrtry>\n                </Tp>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>CRDT</CdtDbtInd>\n                <Dt>\n                    <DtTm>2026-10-17T12:00:00.000+00:00</DtTm>\n                </Dt>\n            </Bal>\n            <Bal>\n                <Tp>\n                    <CdOrPrtry>\n                        <Cd>CLBD</Cd>\n                    </CdOrPrtry>\n                </Tp>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>CRDT</CdtDbtInd>\n                <Dt>\n                    <DtTm>2026-10-21T12:00:00.000+00:00</DtTm>\n                </Dt>\n            </Bal>\n            <Ntry>\n                <NtryRef>########</NtryRef>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>DBIT</CdtDbtInd>\n                <Sts>\n                    <Cd>BOOK</Cd>\n                </Sts>\n                <BookgDt>\n                    <Dt>2026-10-17+12:00</Dt>\n                </BookgDt>\n                <ValDt>\n                    <Dt>2026-10-19</Dt>\n                </ValDt>\n                <AcctSvcrRef>9UWFIWLDCR8Z</AcctSvcrRef>\n                <BkTxCd>\n                    <Prtry>\n                        <Cd>300</Cd>\n                        <Issr>########</Issr>\n                    </Prtry>\n                </BkTxCd>\n                <NtryDtls>\n                    <TxDtls>\n                        <RltdPties/>\n                        <RmtInf>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                        </RmtInf>\n                    </TxDtls>\n                </NtryDtls>\n            </Ntry>\n            <Ntry>\n                <NtryRef>########</NtryRef>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>DBIT</CdtDbtInd>\n                <Sts>\n                    <Cd>BOOK</Cd>\n                </Sts>\n                <BookgDt>\n                    <Dt>2026-10-17+12:00</Dt>\n                </BookgDt>\n                <ValDt>\n                    <Dt>2026-10-19</Dt>\n                </ValDt>\n                <AcctSvcrRef>3SS14HT4E6JI</AcctSvcrRef>\n                <BkTxCd>\n                    <Prtry>\n                        <Cd>300</Cd>\n                        <Issr>########</Issr>\n                    </Prtry>\n                </BkTxCd>\n                <NtryDtls>\n                    <TxDtls>\n                        <RltdPties/>\n                        <RmtInf>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                        </RmtInf>\n                    </TxDtls>\n                </NtryDtls>\n            </Ntry>\n            <Ntry>\n                <NtryRef>########</NtryRef>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>CRDT</CdtDbtInd>\n                <Sts>\n                    <Cd>BOOK</Cd>\n                </Sts>\n                <BookgDt>\n                    <Dt>2026-10-18+12:00</Dt>\n                </BookgDt>\n                <ValDt>\n                    <Dt>2026-10-20</Dt>\n                </ValDt>\n                <AcctSvcrRef>1FZU118FZ7Q4</AcctSvcrRef>\n                <BkTxCd>\n                    <Prtry>\n                        <Cd>300</Cd>\n                        <Issr>########</Issr>\n                    </Prtry>\n                </BkTxCd>\n                <NtryDtls>\n                    <TxDtls>\n                        <RltdPties/>\n                        <RmtInf>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                        </RmtInf>\n                    </TxDtls>\n                </NtryDtls>\n            </Ntry>\n            <Ntry>\n                <NtryRef>########</NtryRef>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>DBIT</CdtDbtInd>\n                <Sts>\n                    <Cd>BOOK</Cd>\n                </Sts>\n                <BookgDt>\n                    <Dt>2026-10-20+12:00</Dt>\n                </BookgDt>\n                <ValDt>\n                    <Dt>2026-10-20</Dt>\n                </ValDt>\n                <AcctSvcrRef>SGU9MN7ZNPNT</AcctSvcrRef>\n                <BkTxCd>\n                    <Prtry>\n                        <Cd>820</Cd>\n                        <Issr>########</Issr>\n                    </Prtry>\n                </BkTxCd>\n                <NtryDtls>\n                    <TxDtls>\n                        <RltdPties>\n                            <Cdtr>\n                                <Pty>\n                                    <Nm>########</Nm>\n                                </Pty>\n                            </Cdtr>\n                            <CdtrAcct>\n                                <Id>\n                                    <IBAN>DE17000000007286234591</IBAN>\n                                </Id>\n                            </CdtrAcct>\n                        </RltdPties>\n                        <RmtInf>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                        </RmtInf>\n                    </TxDtls>\n                </NtryDtls>\n            </Ntry>\n            <Ntry>\n                <NtryRef>########</NtryRef>\n                <Amt Ccy=\"EUR\">#.##</Amt>\n                <CdtDbtInd>DBIT</CdtDbtInd>\n                <Sts>\n                    <Cd>BOOK</Cd>\n                </Sts>\n                <BookgDt>\n                    <Dt>2026-10-21+12:00</Dt>\n                </BookgDt>\n                <ValDt>\n                    <Dt>2026-10-21</Dt>\n                </ValDt>\n                <AcctSvcrRef>2H3UGFUSZ6VN</AcctSvcrRef>\n                <BkTxCd>\n                    <Prtry>\n                        <Cd>820</Cd>\n                        <Issr>########</Issr>\n                    </Prtry>\n                </BkTxCd>\n                <NtryDtls>\n                    <TxDtls>\n                        <RltdPties>\n                            <Cdtr>\n                                <Pty>\n                                    <Nm>########</Nm>\n                                </Pty>\n                            </Cdtr>\n                            <CdtrAcct>\n                                <Id>\n                                    <IBAN>DE17000000007286234591</IBAN>\n                                </Id>\n                            </CdtrAcct>\n                        </RltdPties>\n                        <RmtInf>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                            <Ustrd>########</Ustrd>\n                        </RmtInf>\n                    </TxDtls>\n                </NtryDtls>\n            </Ntry>\n        </Rpt>\n    </BkToCstmrAcctRpt>\n</Document>\n'",
+        "HNSHA:8:2+3374901'",
+        "'",
+        "HNHBS:9:1+3'"
+      ]
+    },
+    {
+      "index": 5,
+      "account": "#2",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKWPD:5"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKWPD",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000410+300+DIALOG0002+4'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@196@",
+        "HNSHK:2:4+PIN:2+902+4607775+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKWPD:3:5+186234590:*****:280:20041155'",
+        "HNSHA:4:2+4607775++********'",
+        "'",
+        "HNHBS:5:1+4'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000006191+300+DIALOG0002+4+DIALOG0002:4'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@5477@",
+        "HNSHK:2:4+PIN:2+902+4607775+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+0010::Nachricht entgegengenommen.'",
+        "HIRMS:4:2:3+0020::Auftrag ausgeführt.'",
+        "HIWPD:5:5:3+@5229@\r\n:16R:GENL\r\n:28E:1/ONLY\r\n:20C::SEME//########\r\n:23G:NEWM\r\n:98C::STAT//20261021120000\r\n:22F::STTY//CUST\r\n:97A::SAFE//########/186234590\r\n:17B::ACTI//Y\r\n:16S:GENL\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDE\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:FIN\r\n:35B:ISIN ########\r\n/DE/########\r\n########\r\n:90B::MRKT//ACTU/EUR#,##\r\n:94B::PRIC//LMAR/EDG\r\n:98A::PRIC//20261021\r\n:93B::AGGR//UNIT/#,##\r\n:16R:SUBBAL\r\n:93C::TAVI//UNIT/AVAI/#,##\r\n:16S:SUBBAL\r\n:19A::HOLD//EUR#,##\r\n:70E::HOLD//########\r\n#,##+EUR\r\n:16S:FIN\r\n:16R:ADDINFO\r\n:19A::HOLP//EUR#,##\r\n:16S:ADDINFO\r\n-'",
+        "HNSHA:6:2+4607775'",
+        "'",
+        "HNHBS:7:1+4'"
+      ]
+    },
+    {
+      "index": 6,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          },
+          {
+            "code": "0100",
+            "text": "Dialog beendet."
+          }
+        ],
+        "segments": []
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000410+300+DIALOG0002+5'",
+        "HNVSK:998:3+PIN:2+998+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@178@",
+        "HNSHK:2:4+PIN:2+902+2722630+1+1+1::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HKEND:3:1+DIALOG0002'",
+        "HNSHA:4:2+2722630++********'",
+        "'",
+        "HNHBS:5:1+5'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000460+300+DIALOG0002+5+DIALOG0002:5'",
+        "HNVSK:998:3+PIN:2+998+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1:20261021:120000+2:2:13:@8@********:5:1+280:20041155:40001306:V:0:0+0'",
+        "HNVSD:999:1+@213@",
+        "HNSHK:2:4+PIN:2+902+2722630+1+1+2::M9U2C6UZ?+RXOCZVRtWV8uqWIZuVP+1+1:20261021:120000+1:999:1+6:10:16+280:20041155:40001306:S:0:0'",
+        "HIRMG:3:2+0010::Nachricht entgegengenommen.+0100::Dialog beendet.'",
+        "HNSHA:4:2+2722630'",
+        "'",
+        "HNHBS:5:1+5'"
+      ]
+    }
+  ]
+}

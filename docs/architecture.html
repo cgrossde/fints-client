@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fints-client architecture</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --panel: #ffffff; --ink: #1c2126; --muted: #5d6670; --line: #d9d4c8;
+    --accent: #0b6e69; --accent-soft: #d9efec; --warm: #b4541a; --warm-soft: #f8e6d8;
+    --ext: #ece8df; --code: #f0ede6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181b; --panel: #1d2327; --ink: #e8e6e1; --muted: #9aa4ad; --line: #343c42;
+      --accent: #5cc9c1; --accent-soft: #17403e; --warm: #f0a36b; --warm-soft: #4a2c18;
+      --ext: #23292e; --code: #262d32;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181b; --panel: #1d2327; --ink: #e8e6e1; --muted: #9aa4ad; --line: #343c42;
+    --accent: #5cc9c1; --accent-soft: #17403e; --warm: #f0a36b; --warm-soft: #4a2c18;
+    --ext: #23292e; --code: #262d32;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.88em; }
+  code { background: var(--code); padding: 1px 5px; border-radius: 4px; }
+  header { padding: 28px 16px 8px; max-width: 1180px; margin: 0 auto; }
+  h1 { margin: 0 0 6px; font-size: 1.7rem; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); max-width: 70ch; }
+  main { max-width: 1180px; margin: 0 auto; padding: 12px 16px 48px;
+    display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+  @media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+  button { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+    border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  button:focus-visible, .box:focus-visible { outline: 2px solid var(--warm); outline-offset: 2px; }
+  .stack { display: grid; gap: 10px; }
+  .row { display: grid; gap: 10px; grid-auto-flow: column; grid-auto-columns: 1fr; }
+  .crate { border: 1.5px dashed var(--line); border-radius: 14px; padding: 12px; display: grid; gap: 10px; }
+  .crate > .label, .rowlabel { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .box { background: var(--panel); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px;
+    cursor: pointer; text-align: left; transition: border-color .15s, background .15s, opacity .15s; min-width: 0; }
+  .box b { display: block; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.95rem; }
+  .box span { display: block; color: var(--muted); font-size: 0.82rem; line-height: 1.35; }
+  .box.ext { background: var(--ext); }
+  .box.selected { border-color: var(--accent); background: var(--accent-soft); }
+  .box.used { border-color: var(--accent); }
+  .box.active { border-color: var(--warm); background: var(--warm-soft); }
+  .stack.flowing .box:not(.active):not(.visited) { opacity: 0.45; }
+  .box.visited { border-color: var(--warm); }
+  .arrow { text-align: center; color: var(--muted); font-size: 0.8rem; line-height: 1; }
+  aside { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px;
+    position: sticky; top: 12px; }
+  @media (max-width: 860px) { aside { position: static; } }
+  aside h2 { margin: 0 0 4px; font-size: 1.15rem; }
+  aside .kicker { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  aside p { margin: 8px 0; }
+  aside ul { margin: 6px 0; padding-left: 20px; }
+  aside li { margin: 3px 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .chip { border: 1px solid var(--line); border-radius: 6px; padding: 1px 8px; font-size: 0.82rem; }
+  .steps { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 6px; }
+  .steps li { border-left: 3px solid var(--line); padding: 4px 10px; color: var(--muted); cursor: pointer; margin: 0; }
+  .steps li.now { border-color: var(--warm); color: var(--ink); background: var(--warm-soft); border-radius: 0 8px 8px 0; }
+  .nav { display: flex; gap: 8px; align-items: center; }
+  .nav .count { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+  a { color: var(--accent); }
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 16px 40px; color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>fints-client architecture</h1>
+  <p>One crate, layers pointing downwards only. Select a component to see what it does, or play a flow to follow a request through the layers.</p>
+  <div class="tabs" id="tabs"></div>
+</header>
+<main>
+  <div class="stack" id="stack">
+    <button class="box ext" data-id="app"><b>your application</b><span>UI, storage, product ID, timers</span></button>
+    <div class="arrow">▼ calls · ▲ gets a <span class="mono">Step&lt;T&gt;</span> back</div>
+    <div class="crate">
+      <div class="label">crate fints-client</div>
+      <div class="row">
+        <button class="box" data-id="jobs"><b>jobs</b><span>operations as steps: open, balance, transactions, transfer</span></button>
+        <button class="box" data-id="banks"><b>banks</b><span>bank directory and profiles, as data</span></button>
+      </div>
+      <div class="row">
+        <button class="box" data-id="protocol"><b>protocol</b><span>dialog, BPD/UPD, version negotiation, TAN engine, return codes</span></button>
+        <button class="box" data-id="formats"><b>formats</b><span>MT940, camt.052, MT535/536, pain.001/002</span></button>
+      </div>
+      <div class="row">
+        <button class="box" data-id="codec"><b>codec</b><span>declarative segments, generic parse and serialise</span></button>
+        <button class="box" data-id="state"><b>session</b><span>SessionState, PausedDialog: values the caller stores</span></button>
+      </div>
+      <div class="row">
+        <button class="box" data-id="quirks"><b>quirks</b><span>repairs for malformed bank messages</span></button>
+        <button class="box" data-id="transport"><b>transport</b><span>the one exchange boundary; HTTPS behind feature http</span></button>
+        <button class="box" data-id="mask"><b>mask</b><span>no secrets in logs or traces</span></button>
+      </div>
+      <div class="row">
+        <button class="box" data-id="trace"><b>trace</b><span>feature trace: Recorder and masked Trace</span></button>
+        <button class="box" data-id="derive"><b>fints-client-derive</b><span>proc-macro crate: #[derive(Segment)]</span></button>
+      </div>
+    </div>
+    <div class="arrow">▼ FinTS message over HTTPS ▲</div>
+    <div class="row">
+      <button class="box ext" data-id="bank"><b>bank</b><span>a FinTS 3.0 PIN/TAN server</span></button>
+      <button class="box ext" data-id="testbank"><b>fints-client-testbank</b><span>synthetic bank and trace replay, offline</span></button>
+    </div>
+  </div>
+  <aside id="panel" aria-live="polite"></aside>
+</main>
+<footer>
+  Details per layer: <a href="architecture.md">architecture.md</a>. Every document: <a href="README.md">docs/README.md</a>.
+</footer>
+<script>
+const C = {
+  app: { kind: "outside the crate", title: "your application",
+    text: "The host: a desktop app, a server, a CLI. It owns everything fints-client refuses to own.",
+    points: ["Stores <code>SessionState</code> (encrypted) per login and passes it to <code>jobs::open</code>.",
+      "Shows TAN challenges and payee-check results, and decides when to poll.",
+      "Supplies the registered FinTS product ID.",
+      "Can supply its own <code>Transport</code> instead of the built-in HTTPS one."],
+    uses: ["jobs", "banks", "state"], files: "examples/sync_accounts.rs" },
+  jobs: { kind: "public API", title: "jobs",
+    text: "Business operations as free functions over one <code>jobs::Dialog</code>. Each returns a <code>Step&lt;T&gt;</code>: <code>Done</code>, <code>NeedTan</code>, <code>NeedVopConfirmation</code> or <code>VopPending</code>, with a resume handle.",
+    points: ["<code>open</code>, <code>synchronise</code>, <code>balance</code>, <code>transactions</code>, <code>holdings</code>, <code>depot_transactions</code>, <code>transfer</code>.",
+      "<code>Dialog::submit_tan</code>, <code>poll</code>, <code>confirm_vop</code>, <code>cancel</code> answer a step.",
+      "Paging runs inside a job. A job completes or fails; no error becomes an empty result.",
+      "<code>Dialog::freeze</code> and <code>thaw</code> move a waiting dialog across a restart."],
+    uses: ["protocol", "formats", "state"], files: "src/jobs.rs, src/jobs/", doc: "jobs-step-design.md" },
+  banks: { kind: "data", title: "banks",
+    text: "Where a bank lives and what it does differently. <code>bank_by_blz</code> joins the directory entry (name, BIC, URL) with the bank's profile.",
+    points: ["Directory: generated at build time from <code>data/fints_institutes.csv</code>.",
+      "<code>BankProfile</code>: login mode, TAN overrides, user ID rule, which reference is a stable booking ID.",
+      "A profile holds only what the bank's own parameters cannot tell the client.",
+      "No branch on a bank code anywhere in <code>protocol</code> or <code>jobs</code>."],
+    uses: ["jobs", "protocol"], files: "src/banks/", doc: "bank-profiles-design.md" },
+  protocol: { kind: "internal (feature tooling)", title: "protocol",
+    text: "One dialog with a bank, by the rules of the specification. Internal: callers see it only through <code>jobs</code>.",
+    points: ["Typestate dialog: <code>New</code>, <code>Synced</code>, <code>Open</code>, <code>TanPending</code>.",
+      "Typed bank and user parameters (BPD, UPD): job versions, limits, formats.",
+      "Version negotiation: the highest version both sides offer, or an error naming both.",
+      "TAN engine: HKTAN per order from HIPINS, profile overrides, one retry on 9075.",
+      "Return codes become typed errors and notices."],
+    uses: ["codec", "transport", "state"], files: "src/protocol.rs, src/protocol/", doc: "bpd-upd-design.md" },
+  formats: { kind: "parsers and builders", title: "formats",
+    text: "The payloads inside the segments: statements, holdings and payment files.",
+    points: ["MT940 and MT942 with repairs, and the SEPA fields of <code>:86:</code> split into typed fields.",
+      "camt.052 with ultimate parties, purpose code and mandate.",
+      "MT535 holdings and MT536 depot transactions.",
+      "pain.001 builder and pain.002 reader for transfers and payee-check results.",
+      "Every result keeps the raw record next to the typed fields."],
+    uses: [], files: "src/formats/, src/camt.rs, src/segments/mt535.rs", doc: "formats-design.md" },
+  codec: { kind: "internal (feature tooling)", title: "codec",
+    text: "FinTS wire bytes to typed segment structs and back. A segment version is one struct with <code>#[derive(Segment)]</code>.",
+    points: ["88 segment versions, written from the specification.",
+      "Wire syntax: tokenizer, <code>?</code> escaping, <code>@len@</code> binary data.",
+      "A segment that does not parse becomes <code>RawSegment</code> with its error, reported to the caller.",
+      "An exact wire-string test per version, property tests over the parser."],
+    uses: ["derive"], files: "src/codec/, src/codec/defs/", doc: "codec.md" },
+  state: { kind: "public values", title: "session",
+    text: "State is data the caller stores. The library writes no files.",
+    points: ["<code>SessionState</code>: system ID, BPD, UPD, TAN method, what the client learned about the bank. With it, the next login skips the sync dialog.",
+      "<code>PausedDialog</code>: a dialog frozen while it waits for a TAN, restorable in a new process.",
+      "Both are versioned JSON; a lost state costs one sync dialog."],
+    uses: [], files: "src/session.rs, src/jobs/paused.rs", doc: "session-state-design.md" },
+  quirks: { kind: "pipeline", title: "quirks",
+    text: "Repairs for messages that break the specification, applied at three stages: raw message, unwrapped envelope, clear text.",
+    points: ["Default chain: missing message reference, empty or <code>0</code> header version, status segment order, segment numbering.",
+      "A caller can set its own chain with <code>BankClient::with_quirks</code>.",
+      "Runs at the transport boundary, so no transport can skip it."],
+    uses: ["codec"], files: "src/quirks/", doc: "architecture.md" },
+  transport: { kind: "boundary", title: "transport",
+    text: "Every message crosses <code>transport::exchange</code>. Quirks, masking and the trace log all run here.",
+    points: ["<code>Transport</code> trait: one request in, one response out.",
+      "<code>HttpTransport</code> (feature <code>http</code>): reqwest with rustls, 60 s timeout.",
+      "Typed failures: <code>Timeout</code>, <code>Transport { kind }</code> (DNS, connect, TLS, I/O)."],
+    uses: ["quirks", "mask"], files: "src/transport.rs" },
+  mask: { kind: "safety", title: "mask",
+    text: "Segment-aware masking. The log gets stars; a trace keeps structure so it can be replayed.",
+    points: ["PIN, TAN, challenges and unknown segments become stars.",
+      "Text and amounts keep only their shape; account identifiers get per-trace aliases; references get keyed pseudonyms.",
+      "Lengths never change, so <code>@len@</code> headers stay valid."],
+    uses: [], files: "src/mask.rs, src/mask/", doc: "trace-tooling.md" },
+  trace: { kind: "feature trace", title: "trace",
+    text: "A <code>Recorder</code> wraps any transport and records each exchange, masked as it passes. The result is one JSON <code>Trace</code>.",
+    points: ["<code>Trace::summary_table</code>: one line per message with orders, versions and return codes.",
+      "The raw messages are the only truth; every other field is derived and checked on load.",
+      "Recorded by <code>scripts/try-bank.sh</code> for a bank nobody has tested yet."],
+    uses: ["transport", "mask"], files: "src/trace.rs", doc: "trace-tooling.md" },
+  derive: { kind: "separate crate", title: "fints-client-derive",
+    text: "The proc-macro crate behind <code>#[derive(Segment)]</code> and <code>#[derive(DataElementGroup)]</code>. It generates parsing, serialising and the schema of each definition.",
+    points: ["Lengths and counts as attributes: <code>#[de(max = 35)]</code>.", "Optional elements are <code>Option&lt;T&gt;</code>, repeated ones <code>Vec&lt;T&gt;</code>."],
+    uses: [], files: "derive/src/lib.rs", doc: "codec.md" },
+  bank: { kind: "outside the crate", title: "bank",
+    text: "A real FinTS server. Only a human runs a command that contacts one; tests and CI never do.",
+    points: ["Its parameter data (BPD, UPD) drives versions, formats and TAN rules.", "What it does beyond the specification is written down per bank, starting at banks.md."],
+    uses: [], files: "", doc: "banks.md" },
+  testbank: { kind: "separate crate, tests only", title: "fints-client-testbank",
+    text: "A synthetic bank that stands in for a real one, in process or as a local server.",
+    points: ["Checks every request strictly; a broken message rule is a recorded violation.",
+      "Models TAN rules, paging, payments, the payee check and faults on the wire.",
+      "Replay: plays the bank side of a trace back and compares the structure of each request.",
+      "Profiles model DKB, comdirect and Consorsbank from their traces."],
+    uses: ["trace"], files: "testbank/", doc: "../testbank/README.md" },
+};
+const FLOWS = {
+  balance: { label: "Read a balance", steps: [
+    [["app", "jobs"], "The app calls <code>jobs::balance(&amp;mut dialog, &amp;account)</code>."],
+    [["jobs", "protocol", "state"], "The protocol picks the highest HKSAL version the bank's BPD and the codec share, and decides from HIPINS whether HKTAN goes with it."],
+    [["protocol", "codec"], "The codec serialises the typed segments and wraps them in the signed, encrypted envelope."],
+    [["transport", "quirks", "mask"], "At the exchange boundary: outgoing quirks, a masked log line, and the recorder if one wraps the transport."],
+    [["transport", "bank"], "One HTTPS request to the bank, one response back."],
+    [["quirks", "codec"], "Incoming quirks repair a malformed answer; the codec parses each segment, keeping what fails as <code>RawSegment</code>."],
+    [["protocol"], "Return codes are classified. A 9075 teaches the session that this order needs HKTAN and is retried once."],
+    [["jobs", "app"], "The app gets <code>Step::Done</code> with the balance and the bank's notices."],
+  ]},
+  login: { label: "Login with app approval", steps: [
+    [["app", "banks", "jobs"], "<code>bank_by_blz</code> gives the bank's config and profile; the app calls <code>jobs::open</code> with its stored <code>SessionState</code>."],
+    [["jobs", "state", "protocol"], "With a system ID and BPD in the state, the sync dialog is skipped. Without, it runs first."],
+    [["protocol", "codec", "transport", "bank"], "The dialog init goes out with HKTAN. The bank answers 3955: approve in the app."],
+    [["jobs", "app"], "The app gets <code>Step::NeedTan</code> with the challenge, <code>not_before</code> and a resume handle. The library does not wait."],
+    [["app", "state"], "Optional: <code>Dialog::freeze</code> turns the waiting dialog into a <code>PausedDialog</code> the app can store and thaw after a restart."],
+    [["app", "jobs", "protocol", "transport", "bank"], "After the wait the app calls <code>Dialog::poll</code>: one status request. Still pending gives <code>NeedTan</code> again."],
+    [["jobs", "app"], "Approved: <code>Step::Done(Opened)</code> with the accounts from the UPD and the TAN methods."],
+    [["app", "jobs", "state"], "<code>Dialog::end</code> returns the updated <code>SessionState</code> for the next run."],
+  ]},
+  record: { label: "Record and replay a bank", steps: [
+    [["app", "trace", "transport"], "<code>scripts/try-bank.sh</code> wraps the HTTPS transport in a <code>Recorder</code> and runs the standard read-only run."],
+    [["transport", "bank"], "The dialog runs at the real bank: login, balance, transactions, holdings, end."],
+    [["mask", "trace"], "Each exchange is masked as it is recorded: stars, shapes, aliases, pseudonyms. Credentials never sit in the recorder unmasked."],
+    [["trace"], "The result is one JSON trace and a summary table: orders, versions and return codes per message."],
+    [["testbank", "trace"], "Offline, the test bank's replay plays the bank side of the trace back."],
+    [["jobs", "protocol", "codec", "transport", "testbank"], "The client runs the same standard run against it. Each request is compared with the recorded one by structure."],
+    [["testbank"], "A difference is a violation and fails the test: the bank is now a regression test."],
+  ]},
+};
+
+const $ = (s, el = document) => el.querySelector(s);
+// On GitHub Pages only this file is published: point document links at the repository.
+const DOCS = location.hostname.endsWith("github.io") ? "https://github.com/cgrossde/fints-client/blob/main/docs/" : "";
+if (DOCS) document.querySelectorAll('a[href$=".md"]').forEach(a => { a.href = DOCS + a.getAttribute("href"); });
+const boxes = [...document.querySelectorAll(".box")];
+const panel = $("#panel"), stack = $("#stack"), tabs = $("#tabs");
+let mode = "explore", stepIndex = 0;
+
+function clearMarks() { boxes.forEach(b => b.classList.remove("selected", "used", "active", "visited")); }
+
+function showComponent(id) {
+  const c = C[id];
+  clearMarks(); stack.classList.remove("flowing");
+  boxes.forEach(b => {
+    if (b.dataset.id === id) b.classList.add("selected");
+    else if (c.uses.includes(b.dataset.id)) b.classList.add("used");
+  });
+  panel.innerHTML = `<div class="kicker">${c.kind}</div><h2 class="mono">${c.title}</h2><p>${c.text}</p>
+    <ul>${c.points.map(p => `<li>${p}</li>`).join("")}</ul>
+    ${c.uses.length ? `<p><b>Uses</b></p><div class="chips">${c.uses.map(u => `<span class="chip mono">${C[u].title}</span>`).join("")}</div>` : ""}
+    ${c.files ? `<p><b>Code</b> <span class="mono">${c.files}</span></p>` : ""}
+    ${c.doc ? `<p><b>Design</b> <a href="${DOCS}${c.doc}">${c.doc.replace("../", "")}</a></p>` : ""}`;
+}
+
+function showFlow() {
+  const f = FLOWS[mode];
+  clearMarks(); stack.classList.add("flowing");
+  f.steps.forEach(([ids], i) => boxes.forEach(b => {
+    if (ids.includes(b.dataset.id)) b.classList.add(i === stepIndex ? "active" : i < stepIndex ? "visited" : "x");
+  }));
+  boxes.forEach(b => { b.classList.remove("x"); if (b.classList.contains("active")) b.classList.remove("visited"); });
+  panel.innerHTML = `<div class="kicker">flow</div><h2>${f.label}</h2>
+    <ol class="steps">${f.steps.map(([, t], i) => `<li data-i="${i}" class="${i === stepIndex ? "now" : ""}">${i + 1}. ${t}</li>`).join("")}</ol>
+    <div class="nav"><button id="prev" ${stepIndex === 0 ? "disabled" : ""}>Back</button>
+    <button id="next" ${stepIndex === f.steps.length - 1 ? "disabled" : ""}>Next step</button>
+    <span class="count">${stepIndex + 1} of ${f.steps.length}</span></div>`;
+  $("#prev").onclick = () => { stepIndex--; showFlow(); };
+  $("#next").onclick = () => { stepIndex++; showFlow(); $("#next").focus(); };
+  panel.querySelectorAll(".steps li").forEach(li => li.onclick = () => { stepIndex = +li.dataset.i; showFlow(); });
+}
+
+function setMode(m) {
+  mode = m; stepIndex = 0;
+  [...tabs.children].forEach(b => b.setAttribute("aria-pressed", b.dataset.mode === m));
+  if (m === "explore") showComponent("jobs"); else showFlow();
+}
+
+[["explore", "Explore components"], ...Object.entries(FLOWS).map(([k, f]) => [k, "▶ " + f.label])].forEach(([k, label]) => {
+  const b = document.createElement("button");
+  b.dataset.mode = k; b.textContent = label; b.onclick = () => setMode(k);
+  tabs.appendChild(b);
+});
+boxes.forEach(b => b.onclick = () => {
+  mode = "explore";
+  [...tabs.children].forEach(t => t.setAttribute("aria-pressed", t.dataset.mode === "explore"));
+  showComponent(b.dataset.id);
+});
+setMode("explore");
+</script>
+</body>
+</html>

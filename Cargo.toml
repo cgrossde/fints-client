@@ -1,0 +1,112 @@
+[package]
+name = "fints-client"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+description = "FinTS 3.0 PIN/TAN client for German online banking: accounts, balances, transactions, holdings, SEPA transfers and the payee check"
+license = "MIT"
+repository = "https://github.com/cgrossde/fints-client"
+documentation = "https://docs.rs/fints-client"
+readme = "README.md"
+keywords = ["fints", "hbci", "banking", "sepa", "germany"]
+categories = ["finance", "api-bindings"]
+# What a published package holds: the code, the bank directory the build
+# script reads, the licence files, the consumer example and the pain golden
+# files the unit tests compare with. The other examples are maintainer tools
+# for traces (some need the unpublished test bank); they, the integration
+# tests, docs and scripts stay in the repository.
+include = [
+    "/src/**",
+    "/examples/sync_accounts.rs",
+    "/tests/fixtures/pain/*",
+    "/build.rs",
+    "/data/fints_institutes.csv",
+    "/README.md",
+    "/CHANGELOG.md",
+    "/LICENSE",
+    "/NOTICE",
+]
+
+# docs.rs documents what an application uses; feature-gated items get a badge.
+[package.metadata.docs.rs]
+features = ["http", "trace"]
+rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+name = "fints_client"
+path = "src/lib.rs"
+
+[features]
+default = ["http"]
+# HttpTransport (reqwest with rustls) and the default transport of Dialog.
+http = ["dep:reqwest", "dep:base64", "dep:rustls"]
+# Registers the synthetic test bank (`testbank/`, binary `fints-testbank`) as
+# a known bank: BLZ 12345678 at http://127.0.0.1:47331/fints. For development
+# builds of apps; off by default so release builds never list a local bank.
+testbank = []
+# The protocol internals: `codec` and `protocol`. For the test bank, the
+# examples and wire-level tests; callers use `jobs`.
+tooling = []
+# Recorder and Trace (src/trace.rs): masked traces of dialogs.
+trace = []
+
+[[example]]
+name = "record_trace"
+required-features = ["trace"]
+
+[[example]]
+name = "transfer"
+required-features = ["trace"]
+
+[[example]]
+name = "trace_summary"
+required-features = ["trace"]
+
+[[example]]
+name = "trace_remask"
+required-features = ["trace"]
+
+[[example]]
+name = "trace_identities"
+required-features = ["trace"]
+
+[workspace]
+members = [".", "derive", "testbank"]
+
+# Smaller build folders: line numbers for our own code (backtraces and panics
+# still point at the line), no debug info for dependencies.
+[profile.dev]
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+debug = false
+
+[dependencies]
+fints-client-derive = { path = "derive", version = "=0.1.0" }
+reqwest = { version = "0.12", features = ["rustls-tls"], default-features = false, optional = true }
+base64 = { version = "0.22", optional = true }
+# Only to recognise TLS failures in reqwest's error chain (TransportKind::Tls).
+rustls = { version = "0.23", default-features = false, features = ["std"], optional = true }
+encoding_rs = "0.8"
+rust_decimal = { version = "1.35", features = ["serde-with-str"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2"
+tracing = "0.1"
+rand = "0.9"
+# HMAC-SHA256 for the keyed pseudonyms of trace masking (src/mask/pseudonym.rs).
+hmac-sha256 = "1.1"
+quick-xml = "0.41"
+# No named-zone API: FinTS times are zone-less wall clock. `tz-system` +
+# `tzdb-zoneinfo` read the OS zoneinfo for `Zoned::now()` (local wall clock);
+# `tzdb-bundle-platform` bundles a tz database on Windows only. No `tz-fat`.
+jiff = { version = "1", default-features = false, features = ["std", "serde", "tz-system", "tzdb-zoneinfo", "tzdb-bundle-platform"] }
+
+[build-dependencies]
+csv = "1"
+encoding_rs = "0.8"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+proptest = "1"
+fints-client-testbank = { path = "testbank" }

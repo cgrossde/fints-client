@@ -1,0 +1,1297 @@
+{
+  "format": "fints-client-trace/4",
+  "comment": [
+    "Recorded with examples/record_trace.rs at BLZ 76030080, 30 days, 19 exchanges.",
+    "Masked by the library, anonymised by Trace::from_exchanges."
+  ],
+  "client": {
+    "version": "0.1.0",
+    "outcome": "completed"
+  },
+  "bank": {
+    "blz": "76030080",
+    "bic": "CSDBDE71XXX"
+  },
+  "accounts": [
+    {
+      "alias": "#1",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKSAL",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#2",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKSAL",
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#3",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKSAL",
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#4",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKSAL",
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#5",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKSAL",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#6",
+      "class": null,
+      "kontoart": null,
+      "jobs": [
+        "HKCCS",
+        "HKIPZ",
+        "HKKAZ",
+        "HKSPA",
+        "HKSAL",
+        "HKPRO"
+      ]
+    },
+    {
+      "alias": "#7",
+      "class": "depot",
+      "kontoart": null,
+      "jobs": [
+        "HKWPD",
+        "HKPRO"
+      ]
+    }
+  ],
+  "exchanges": [
+    {
+      "index": 0,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3",
+          "HKSYN:3"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKIDN",
+            "code": "0020",
+            "text": "Angemeldet."
+          },
+          {
+            "job": "HKVVB",
+            "code": "0020",
+            "text": "Informationen fehlerfrei entgegengenommen."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3050",
+            "text": "BPD nicht mehr aktuell. Aktuelle Version folgt."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          },
+          {
+            "job": "HKSYN",
+            "code": "0020",
+            "text": "Die Synchronisierung der Kundensystem-ID war erfolgreich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000393+300+0+1'",
+        "HNVSK:998:3+PIN:1+998+1+1::0+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@231@",
+        "HNSHK:2:4+PIN:1+999+3339601+1+1+1::0+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKIDN:3:2+280:76030080+919511764524+0+1'",
+        "HKVVB:4:3+0+0+1+*************************+1.0'",
+        "HKSYN:5:3+0'",
+        "HNSHA:6:2+3339601++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000002223+300+DIALOG0001+1+DIALOG0001:1'",
+        "HNVSK:998:3+PIN:1+998+1+2::0+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@2009@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Angemeldet.'",
+        "HIRMS:4:2:4+0020::Informationen fehlerfrei entgegengenommen.+3050::BPD nicht mehr aktuell. Aktuelle Version folgt.+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:900:901'",
+        "HIRMS:5:2:5+0020::Die Synchronisierung der Kundensystem-ID war erfolgreich.'",
+        "HIBPA:6:3:4+2+280:76030080+Consors+0+1:2+201:210:220:300:400+100'",
+        "HIKOM:7:4:4+280:76030080+1+3:https?://brokerage-hbci.consorsbank.de/hbci::MIM:1'",
+        "HISPAS:8:1:4+1+1+0+J:J:J:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.002.03:urn?:swift?:xsd?:$pain.001.002.02:sepade.pain.001.001.02.xsd'",
+        "HIKAZS:9:7:4+1+1+0+90:J:N'",
+        "HISALS:10:3:4+1+1'",
+        "HIKAZS:11:6:4+1+1+1+90:J:N'",
+        "HIIPZS:12:1:4+1+1+0+:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.003.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.002.03:urn?:swift?:xsd?:$pain.001.002.02:sepade.pain.001.001.02.xsd'",
+        "HICCSS:13:1:4+1+1+0'",
+        "HIKAZS:14:5:4+1+1+90:J:N'",
+        "HITANS:15:7:4+1+1+0+N:N:1:900:2:MS1.0.0:photoTAN::SecurePlus TAN Generator:9:1:TAN:999:J:1:N:0:0:N:J:00:0:J:1::::::901:2:MS2.0.0:Decoupled::Consorsbank/myPrivateBank App:::TAN:999:J:1:N:0:0:N:J:00:0:J:1:60:5:5:N:J'",
+        "HIKAZS:16:4:4+1+1+90:J'",
+        "XIADAS:17:1:4+1+1'",
+        "HIKAZS:18:3:4+1+1+90:J'",
+        "HIWPDS:19:2:4+1+1+J'",
+        "HIWPDS:20:6:4+1+1+0+J:J:J'",
+        "HIWPDS:21:5:4+1+1+J:J:J'",
+        "HIPROS:22:4:4+1+1+0'",
+        "HIWPDS:23:4:4+1+1+J:J:J'",
+        "HIPROS:24:3:4+1+1'",
+        "HIWPDS:25:3:4+1+1+J'",
+        "XIADSS:26:1:4+1+1'",
+        "HISALS:27:4:4+1+1'",
+        "HISALS:28:5:4+1+1'",
+        "HISALS:29:6:4+1+1+0'",
+        "DIPINS:30:1:4+1+1+HKSPA:N:HKKAZ:N:HKSAL:N:HKIPZ:J:HKCCS:J:HKTAN:N:XKADA:N:HKWPD:N:HKPRO:N:XKADS:N'",
+        "HIPINS:31:1:4+1+1+0+:::::HKSPA:N:HKKAZ:N:HKSAL:N:HKIPZ:J:HKCCS:J:HKTAN:N:XKADA:N:HKWPD:N:HKPRO:N:XKADS:N'",
+        "HISYN:32:4:5+663074PHTPY6PCYJ7PKKA7LBO0ED0T'",
+        "'",
+        "HNHBS:33:1+1'"
+      ]
+    },
+    {
+      "index": 1,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Der Dialog wurde beendet."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0020",
+            "text": "Abgemeldet."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000423+300+DIALOG0001+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@183@",
+        "HNSHK:2:4+PIN:2+901+9595015+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKEND:3:1+DIALOG0001'",
+        "HNSHA:4:2+9595015++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000312+300+DIALOG0001+2+DIALOG0001:2'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@72@",
+        "HIRMG:2:2+0100::Der Dialog wurde beendet.'",
+        "HIRMS:3:2:3+0020::Abgemeldet.'",
+        "'",
+        "HNHBS:4:1+2'"
+      ]
+    },
+    {
+      "index": 2,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKIDN"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKIDN",
+            "code": "0020",
+            "text": "Angemeldet."
+          },
+          {
+            "job": "HKIDN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          },
+          {
+            "job": "HKVVB",
+            "code": "0020",
+            "text": "Informationen fehlerfrei entgegengenommen."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3050",
+            "text": "UPD nicht mehr aktuell. Aktuelle Version folgt."
+          },
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000486+300+0+1'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@295@",
+        "HNSHK:2:4+PIN:2+901+8801287+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKIDN:3:2+280:76030080+919511764524+663074PHTPY6PCYJ7PKKA7LBO0ED0T+1'",
+        "HKVVB:4:3+2+0+1+*************************+1.0'",
+        "HKTAN:5:7+4+HKIDN'",
+        "HNSHA:6:2+8801287++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001778+300+DIALOG0002+1+DIALOG0002:1'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@1408@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Angemeldet.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIRMS:4:2:4+0020::Informationen fehlerfrei entgegengenommen.+3050::UPD nicht mehr aktuell. Aktuelle Version folgt.+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:900:901'",
+        "HIUPA:5:4:4+919511764524+0+0+########'",
+        "HIUPD:6:6:4+432426128::280:76030080+DE74760300800432426128+919511764524++EUR+########++########++HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKSAL:1+HKPRO:1'",
+        "HIUPD:7:6:4+432426129::280:76030080+DE47760300800432426129+919511764524++EUR+########++########++HKSAL:1+HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKPRO:1'",
+        "HIUPD:8:6:4+432426130::280:76030080+DE20760300800432426130+919511764524++EUR+########++########++HKSAL:1+HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKPRO:1'",
+        "HIUPD:9:6:4+432426131::280:76030080+DE90760300800432426131+919511764524++EUR+########++########++HKSAL:1+HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKPRO:1'",
+        "HIUPD:10:6:4+432426132::280:76030080+DE63760300800432426132+919511764524++EUR+########++########++HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKSAL:1+HKPRO:1'",
+        "HIUPD:11:6:4+432426133::280:76030080+DE36760300800432426133+919511764524++EUR+########++########++HKCCS:1+HKIPZ:1+HKKAZ:1+HKSPA:1+HKSAL:1+HKPRO:1'",
+        "HIUPD:12:6:4+432426134::280:76030080++919511764524++EUR+########++########++HKWPD:1+HKPRO:1'",
+        "HITAN:13:7:5+4++noref+***********'",
+        "'",
+        "HNHBS:14:1+1'"
+      ]
+    },
+    {
+      "index": 3,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "9050",
+            "text": "Nachricht teilweise fehlerhaft."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "9075",
+            "text": "Starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": true,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000418+300+DIALOG0002+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@198@",
+        "HNSHK:2:4+PIN:2+901+7014666+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426128::280:76030080+N'",
+        "HNSHA:4:2+7014666++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000346+300+DIALOG0002+2+DIALOG0002:2'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@105@",
+        "HIRMG:2:2+9050::Nachricht teilweise fehlerhaft.'",
+        "HIRMS:3:2:3+9075::Starke Authentifizierung erforderlich.'",
+        "'",
+        "HNHBS:4:1+2'"
+      ]
+    },
+    {
+      "index": 4,
+      "account": "#1",
+      "retry_of": 3,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000436+300+DIALOG0002+3'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+1799262+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426128::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+1799262++********'",
+        "'",
+        "HNHBS:6:1+3'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000582+300+DIALOG0002+3+DIALOG0002:3'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426128::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+3'"
+      ]
+    },
+    {
+      "index": 5,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "9050",
+            "text": "Nachricht teilweise fehlerhaft."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "9075",
+            "text": "Starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": true,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000471+300+DIALOG0002+4'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@251@",
+        "HNSHK:2:4+PIN:2+901+1024589+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE74760300800432426128:CSDBDE71XXX:432426128::280:76030080+N+20260914+20261014'",
+        "HNSHA:4:2+1024589++********'",
+        "'",
+        "HNHBS:5:1+4'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000346+300+DIALOG0002+4+DIALOG0002:4'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@105@",
+        "HIRMG:2:2+9050::Nachricht teilweise fehlerhaft.'",
+        "HIRMS:3:2:3+9075::Starke Authentifizierung erforderlich.'",
+        "'",
+        "HNHBS:4:1+4'"
+      ]
+    },
+    {
+      "index": 6,
+      "account": "#1",
+      "retry_of": 5,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000489+300+DIALOG0002+5'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+4223112+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE74760300800432426128:CSDBDE71XXX:432426128::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+4223112++********'",
+        "'",
+        "HNHBS:6:1+5'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000005642+300+DIALOG0002+5+DIALOG0002:5'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@4374@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIKAZ:4:7:3+@4122@\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/1\r\n:60F:C260916EUR#,##\r\n:61:2609160916D#,##N005NONREF\r\n:86:005?00########?20EREF+MAUO3TAPM9F8\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE71000000007032426135?32########\r\n:62M:C260916EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/2\r\n:60M:C260919EUR#,##\r\n:61:2609190919D#,##N008NONREF\r\n:86:008?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?30########?31DE44000000007032426136\r\n?32########\r\n:62M:C260919EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/3\r\n:60M:C260922EUR#,##\r\n:61:2609220922C#,##N053NONREF\r\n:86:053?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?24########?30########\r\n?31DE17000000007032426137?32########\r\n:62M:C260922EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/4\r\n:60M:C260923EUR#,##\r\n:61:2609230923D#,##N008NONREF\r\n:86:008?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?24########\r\n########?25########?30########?31DE87000000007032426138?3\r\n2########\r\n:62M:C260923EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/5\r\n:60M:C260926EUR#,##\r\n:61:2609260926D#,##N005NONREF\r\n:86:005?00########?20EREF+TNQMFGWQ0ZXY\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE60000000007032426139?32########\r\n########\r\n:61:2609260926D#,##N005NONREF\r\n:86:005?00########?20EREF+E70PYCLWHULG\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE33000000007032426140?32########\r\n########?33########\r\n:61:2609260926D#,##N008NONREF\r\n:86:008?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?30########?31DE06000000007032426141\r\n?32########\r\n:61:2609260926D#,##N008NONREF\r\n:86:008?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?24########\r\n########?30########?31DE76000000007032426142?32########\r\n:61:2609260926D#,##N008NONREF\r\n:86:008?00########?20EREF+EPEU738D5CG3?21?\r\n22KREF+########?23SVWZ+########?30########?31DE49000000007032426143\r\n?32########\r\n:62M:C260926EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/6\r\n:60M:C260930EUR#,##\r\n:61:2609300930C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########?30########\r\n########?31DE76000000007032426142?32########\r\n:61:2609300930D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE22000000007032426144\r\n?32########\r\n:62M:C260930EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/7\r\n:60M:C261004EUR#,##\r\n:61:2610041004C#,##N066NONREF\r\n:86:066?00########?20EREF+BHJSLANMV2NW?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?30########?31DE92000000007032426145?32########\r\n:62M:C261004EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/8\r\n:60M:C261006EUR#,##\r\n:61:2610061006D#,##N005NONREF\r\n:86:005?00########?20EREF+0HSG13M4GT5P\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE65000000007032426146\r\n?32########?33########\r\n:62M:C261006EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/9\r\n:60M:C261007EUR#,##\r\n:61:2610071007D#,##N005NONREF\r\n:86:005?00########?20EREF+JFXWJI3MM8NT\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########\r\n########?27########?30########?31DE38000000007032426147\r\n?32########?33########\r\n:62M:C261007EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/10\r\n:60M:C261013EUR#,##\r\n:61:2610131013C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE11000000007032426148\r\n?32########\r\n:61:2610131013C#,##N066NONREF\r\n:86:066?00########?20EREF+YCER7Z5HFAQV?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?30########?31DE92000000007032426145?32########\r\n:62M:C261013EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/11\r\n:60M:C261014EUR#,##\r\n:61:2610141014C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE11000000007032426148\r\n?32########\r\n:62F:C261014EUR#,##\r\n-'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+5'"
+      ]
+    },
+    {
+      "index": 7,
+      "account": "#2",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000436+300+DIALOG0002+6'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+9736832+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426129::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+9736832++********'",
+        "'",
+        "HNHBS:6:1+6'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000573+300+DIALOG0002+6+DIALOG0002:6'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426129::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+6'"
+      ]
+    },
+    {
+      "index": 8,
+      "account": "#2",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000489+300+DIALOG0002+7'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+6645282+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE47760300800432426129:CSDBDE71XXX:432426129::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+6645282++********'",
+        "'",
+        "HNHBS:6:1+7'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001153+300+DIALOG0002+7+DIALOG0002:7'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@825@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIKAZ:4:7:3+@574@\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/1\r\n:60F:C260926EUR#,##\r\n:61:2609260926C#,##N052NONREF\r\n:86:052?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?30########?31DE81000000007032426149?32########\r\n########\r\n:62M:C260926EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/2\r\n:60M:C260930EUR#,##\r\n:61:2609300930D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########?30########\r\n########?31DE81000000007032426149?32########\r\n:62F:C260930EUR#,##\r\n-'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+7'"
+      ]
+    },
+    {
+      "index": 9,
+      "account": "#3",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000436+300+DIALOG0002+8'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+2271497+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426130::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+2271497++********'",
+        "'",
+        "HNHBS:6:1+8'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000574+300+DIALOG0002+8+DIALOG0002:8'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426130::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+8'"
+      ]
+    },
+    {
+      "index": 10,
+      "account": "#3",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000489+300+DIALOG0002+9'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+6983997+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE20760300800432426130:CSDBDE71XXX:432426130::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+6983997++********'",
+        "'",
+        "HNHBS:6:1+9'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001629+300+DIALOG0002+9+DIALOG0002:9'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@1216@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIKAZ:4:7:3+@965@\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/1\r\n:60F:C260922EUR#,##\r\n:61:2609220922D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########?30########\r\n########?31DE22000000007032426144?32########\r\n:61:2609220922D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE22000000007032426144\r\n?32########\r\n:62M:C260922EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/2\r\n:60M:C260926EUR#,##\r\n:61:2609260926C#,##N052NONREF\r\n:86:052?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE81000000007032426149\r\n?32########\r\n:62M:C260926EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/3\r\n:60M:C260930EUR#,##\r\n:61:2609300930D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE22000000007032426144\r\n?32########\r\n:62F:C260930EUR#,##\r\n-'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+9'"
+      ]
+    },
+    {
+      "index": 11,
+      "account": "#4",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000438+300+DIALOG0002+10'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+7240365+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426131::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+7240365++********'",
+        "'",
+        "HNHBS:6:1+10'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000576+300+DIALOG0002+10+DIALOG0002:10'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426131::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+10'"
+      ]
+    },
+    {
+      "index": 12,
+      "account": "#4",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000491+300+DIALOG0002+11'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+9701350+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE90760300800432426131:CSDBDE71XXX:432426131::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+9701350++********'",
+        "'",
+        "HNHBS:6:1+11'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001100+300+DIALOG0002+11+DIALOG0002:11'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@777@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIKAZ:4:7:3+@526@\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/1\r\n:60F:C260926EUR#,##\r\n:61:2609260926C#,##N052NONREF\r\n:86:052?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE81000000007032426149\r\n?32########\r\n:62M:C260926EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/2\r\n:60M:C260930EUR#,##\r\n:61:2609300930D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE22000000007032426144\r\n?32########\r\n:62F:C260930EUR#,##\r\n-'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+11'"
+      ]
+    },
+    {
+      "index": 13,
+      "account": "#5",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000438+300+DIALOG0002+12'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+4491392+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426132::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+4491392++********'",
+        "'",
+        "HNHBS:6:1+12'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000575+300+DIALOG0002+12+DIALOG0002:12'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426132::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+12'"
+      ]
+    },
+    {
+      "index": 14,
+      "account": "#5",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "3010",
+            "text": "Keine Umsätze gefunden"
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000491+300+DIALOG0002+13'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+9995880+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE63760300800432426132:CSDBDE71XXX:432426132::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+9995880++********'",
+        "'",
+        "HNHBS:6:1+13'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000470+300+DIALOG0002+13+DIALOG0002:13'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@226@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+3010::Keine Umsätze gefunden+3076::Keine starke Authentifizierung erforderlich.'",
+        "HITAN:4:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:5:1+13'"
+      ]
+    },
+    {
+      "index": 15,
+      "account": "#6",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:6"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKSAL",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000438+300+DIALOG0002+14'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@216@",
+        "HNSHK:2:4+PIN:2+901+5374516+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKSAL:3:6+432426133::280:76030080+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+5374516++********'",
+        "'",
+        "HNHBS:6:1+14'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000585+300+DIALOG0002+14+DIALOG0002:14'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@321@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:4:6:3+432426133::280:76030080+########+EUR+C:#,##:EUR:20261013++#,##:EUR+#,##:EUR'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+14'"
+      ]
+    },
+    {
+      "index": 16,
+      "account": "#6",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKKAZ:7"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKKAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          },
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen/Hinweise vor."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKKAZ",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          },
+          {
+            "job": "HKKAZ",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [
+        "HIKAZ:7: 4 characters outside the SWIFT character set"
+      ],
+      "request": [
+        "HNHBK:1:3+000000000491+300+DIALOG0002+15'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@269@",
+        "HNSHK:2:4+PIN:2+901+9633956+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKKAZ:3:7+DE36760300800432426133:CSDBDE71XXX:432426133::280:76030080+N+20260914+20261014'",
+        "HKTAN:4:7+4+HKKAZ'",
+        "HNSHA:5:2+9633956++********'",
+        "'",
+        "HNHBS:6:1+15'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000015653+300+DIALOG0002+15+DIALOG0002:15'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@11362@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.+3060::Teilweise liegen Warnungen/Hinweise vor.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.+3076::Keine starke Authentifizierung erforderlich.'",
+        "HIKAZ:4:7:3+@11109@\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/1\r\n:60F:C260914EUR#,##\r\n:61:2609140914D#,##N005NONREF\r\n:86:005?00########?20EREF+T3L0M046QDWJ\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?\r\n31DE54000000007032426150?32########?33########\r\n:61:2609140914D#,##N005NONREF\r\n:86:005?00########?20EREF+DYDVF9DHTULX\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE27000000007032426151?\r\n32########?33########\r\n:62M:C260914EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/2\r\n:60M:C260915EUR#,##\r\n:61:2609150915D#,##N005NONREF\r\n:86:005?00########?20EREF+2ZGTARTBDFNR\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########\r\n########?310432426152?32########\r\n:62M:C260915EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/3\r\n:60M:C260919EUR#,##\r\n:61:2609190919D#,##N005NONREF\r\n:86:005?00########?20EREF+IKL5RJA0MM8C\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE54000000007032426150\r\n?32########?33########\r\n:61:2609190919C#,##N059NONREF\r\n:86:059?00########?20EREF+IKL5RJA0MM8C?21?22KR\r\nEF+########?23SVWZ+########?24########\r\n########?25########?26########?\r\n27########?30########?31DE54000000007032426150?32########\r\n########?33########\r\n:62M:C260919EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/4\r\n:60M:C260920EUR#,##\r\n:61:2609200920D#,##N005NONREF\r\n:86:005?00########?20EREF+FASRECXQD6Y8\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE54000000007032426150\r\n?32########?33########\r\n:61:2609200920D#,##N005NONREF\r\n:86:005?00########?20EREF+T06ZKUK239IK\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609200920D#,##N027NONREF\r\n:86:027?00########?20EREF+2ZGTARTBDFNR?21?22K\r\nREF+########?23SVWZ+########?24########\r\n########?25########?30########?310432426152?32########\r\n########\r\n:61:2609200920D#,##N005NONREF\r\n:86:005?00########?20EREF+2ZGTARTBDFNR\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########\r\n########?310432426152?32########\r\n:62M:C260920EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/5\r\n:60M:C260921EUR#,##\r\n:61:2609210921D#,##N005NONREF\r\n:86:005?00########?20EREF+AWA9EHEGWNKY\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609210921D#,##N005NONREF\r\n:86:005?00########?20EREF+162HKI9E9OHD\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609210921D#,##N005NONREF\r\n:86:005?00########?20EREF+RCZGEW9842HQ\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:62M:C260921EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/6\r\n:60M:C260922EUR#,##\r\n:61:2609220922D#,##N005NONREF\r\n:86:005?00########?20EREF+ICQC8C0MBY5L\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609220922D#,##N005NONREF\r\n:86:005?00########?20EREF+0E6WUXGSBOWH\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609220922D#,##N005NONREF\r\n:86:005?00########?20EREF+PYVR08B97DRC\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2609220922D#,##N005NONREF\r\n:86:005?00########?20EREF+ITDFC2M5YQAF\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609220922C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########?30########\r\n########?31DE49000000007032426143?32########\r\n:61:2609220922C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE49000000007032426143\r\n?32########\r\n:61:2609230922D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?24########?30########\r\n########?31DE16000000007032426155?32########\r\n:62M:C260922EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/7\r\n:60M:C260926EUR#,##\r\n:61:2609260926D#,##N005NONREF\r\n:86:005?00########?20EREF+CMU346VQH5WY\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609260926D#,##N005NONREF\r\n:86:005?00########?20EREF+6L1CTYRK2UB8\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2609260926C#,##N066NONREF\r\n:86:066?00########?20EREF+50YE3HY9NM85?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?25########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2609260926C#,##N066NONREF\r\n:86:066?00########?20EREF+800NA4ZF1IX4?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?25########?30########?31DE70000000007032426153?32########\r\n########?33########\r\n:61:2609260926C#,##N066NONREF\r\n:86:066?00########?20EREF+PA1RH4A404DX?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?25########?30########?31DE70000000007032426153?32########\r\n########?33########\r\n:62M:C260926EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/8\r\n:60M:C260927EUR#,##\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+OM9MYP2SH7OW\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########\r\n########?30########?31DE54000000007032426150?32########\r\n########?33########\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+SC41KAO12EPZ\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE54000000007032426150\r\n?32########?33########\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+QTTY3VWCS1QA\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+FSIYS9W7XGOG\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+YVBF0UI4I6SC\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609270927D#,##N027NONREF\r\n:86:027?00########?20EREF+2ZGTARTBDFNR?21?22K\r\nREF+########?23SVWZ+########?24########\r\n########?25########?30########?310432426152?32########\r\n########\r\n:61:2609270927D#,##N005NONREF\r\n:86:005?00########?20EREF+2ZGTARTBDFNR\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########\r\n########?310432426152?32########\r\n:62M:C260927EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/9\r\n:60M:C260928EUR#,##\r\n:61:2609280928D#,##N005NONREF\r\n:86:005?00########?20EREF+UOBRTKW5458Z\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2609280928D#,##N005NONREF\r\n:86:005?00########?20EREF+WJGAOC7YPM4Q\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:62M:C260928EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/10\r\n:60M:C260929EUR#,##\r\n:61:2609290929D#,##N005NONREF\r\n:86:005?00########?20EREF+2DZ44SZPI8A6\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########\r\n########?27########?30########?31DE54000000007032426150\r\n?32########?33########\r\n:62M:C260929EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/11\r\n:60M:C260930EUR#,##\r\n:61:2609300930D#,##N005NONREF\r\n:86:005?00########?20EREF+ACF59MNA3I67\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2609300930D#,##N027NONREF\r\n:86:027?00########?20EREF+2ZGTARTBDFNR?21?22K\r\nREF+########?23SVWZ+########?24########\r\n########?25########?30########?310432426152?32########\r\n########\r\n:61:2609300930D#,##N005NONREF\r\n:86:005?00########?20EREF+2ZGTARTBDFNR\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########\r\n########?30########?310432426152?32########\r\n:61:2609300930C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE06000000007032426141\r\n?32########\r\n:61:2609300930C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE49000000007032426143\r\n?32########\r\n:61:2609300930C#,##N066NONREF\r\n:86:066?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE81000000007032426149\r\n?32########\r\n:62M:C260930EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/12\r\n:60M:C261004EUR#,##\r\n:61:2610041004D#,##N005NONREF\r\n:86:005?00########?20EREF+IN8EX13KZZ1G\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########\r\n########?31DE54000000007032426150?32########?33########\r\n########\r\n:61:2610041004D#,##N005NONREF\r\n:86:005?00########?20EREF+BTHQ6N7USGY2\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########\r\n########?30########?31DE54000000007032426150?32########\r\n########?33########\r\n:61:2610041004D#,##N005NONREF\r\n:86:005?00########?20EREF+B5L9L2XRR5W7\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:61:2610041004D#,##N005NONREF\r\n:86:005?00########?20EREF+1LGDWYRUD9NX\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:62M:C261004EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/13\r\n:60M:C261006EUR#,##\r\n:61:2610061006D#,##N005NONREF\r\n:86:005?00########?20EREF+DGLNRFMQBHPP\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?30########?31DE70000000007032426153\r\n?32########?33########\r\n:62M:C261006EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/14\r\n:60M:C261007EUR#,##\r\n:61:2610071007D#,##N005NONREF\r\n:86:005?00########?20EREF+XJBCUYKRWGP6\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2610071007C#,##N066NONREF\r\n:86:066?00########?20EREF+D4UZG5YE54UE?21\r\n?22KREF+########?23SVWZ+########?24########\r\n########?25########?30########?31DE43000000007032426154?32########\r\n########\r\n:62M:C261007EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/15\r\n:60M:C261011EUR#,##\r\n:61:2610111011D#,##N005NONREF\r\n:86:005?00########?20EREF+2ZGTARTBDFNR\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?25########?26########?\r\n30########?310432426152?32########\r\n:62M:C261011EUR#,##\r\n-\r\n:20:########\r\n:21:########\r\n:25:########/########\r\n:28C:0/16\r\n:60M:C261012EUR#,##\r\n:61:2610121012D#,##N005NONREF\r\n:86:005?00########?20EREF+PZXG889ERDUV\r\n?21?22KREF+########?23SVWZ+########\r\n?24########?30########?31DE43000000007032426154?32########\r\n########\r\n:61:2610131012D#,##N016NONREF\r\n:86:016?00########?20EREF+EPEU738D5CG3?21\r\n?22KREF+########?23SVWZ+########?30########?31DE16000000007032426155\r\n?32########\r\n:62F:C261012EUR#,##\r\n-'",
+        "HITAN:5:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:6:1+15'"
+      ]
+    },
+    {
+      "index": 17,
+      "account": "#7",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKWPD:6"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0010",
+            "text": "Die Nachricht wurde entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKWPD",
+            "code": "0020",
+            "text": "Der Auftrag wurde ausgeführt."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000418+300+DIALOG0002+16'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@196@",
+        "HNSHK:2:4+PIN:2+901+9039127+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKWPD:3:6+432426134::280:76030080'",
+        "HNSHA:4:2+9039127++********'",
+        "'",
+        "HNHBS:5:1+16'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000612+300+DIALOG0002+16+DIALOG0002:16'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@372@",
+        "HIRMG:2:2+0010::Die Nachricht wurde entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Der Auftrag wurde ausgeführt.'",
+        "HIWPD:4:6:3+@252@\r\n:16R:GENL\r\n:28E:1/ONLY\r\n:13A::STAT//001\r\n:20C::SEME//########\r\n:23G:NEWM\r\n:98C::PREP//20261014120000\r\n:98A::STAT//20261014\r\n:22F::STTY//CUST\r\n:97A::SAFE//########/432426134\r\n:17B::ACTI//N\r\n:16S:GENL\r\n:16R:ADDINFO\r\n:19A::HOLP//EUR#,##\r\n:16S:ADDINFO\r\n-'",
+        "'",
+        "HNHBS:5:1+16'"
+      ]
+    },
+    {
+      "index": 18,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Der Dialog wurde beendet."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0020",
+            "text": "Abgemeldet."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000425+300+DIALOG0002+17'",
+        "HNVSK:998:3+PIN:2+998+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1:20261014:120000+2:2:13:@8@********:5:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@183@",
+        "HNSHK:2:4+PIN:2+901+7499070+1+1+1::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+1:20261014:120000+1:999:1+6:10:16+280:76030080:919511764524:S:0:0'",
+        "HKEND:3:1+DIALOG0002'",
+        "HNSHA:4:2+7499070++********'",
+        "'",
+        "HNHBS:5:1+17'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000315+300+DIALOG0002+17+DIALOG0002:17'",
+        "HNVSK:998:3+PIN:2+998+1+2::663074PHTPY6PCYJ7PKKA7LBO0ED0T+1+2:2:13:@8@********:6:1+280:76030080:919511764524:V:0:0+0'",
+        "HNVSD:999:1+@72@",
+        "HIRMG:2:2+0100::Der Dialog wurde beendet.'",
+        "HIRMS:3:2:3+0020::Abgemeldet.'",
+        "'",
+        "HNHBS:4:1+17'"
+      ]
+    }
+  ]
+}

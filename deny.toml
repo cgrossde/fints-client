@@ -1,0 +1,45 @@
+[graph]
+all-features = true
+
+[licenses]
+# Allow-list: anything not listed is denied.
+# LGPL and GPL (any version) are deliberately denied and must never be added
+# here: fints-client is MIT and stays MIT (AGENTS.md, "Clean room").
+allow = [
+    "MIT",
+    "Apache-2.0",
+    # Offered next to Apache-2.0/MIT by wasi, wasip2 and wit-bindgen.
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Unicode-3.0",
+    # Unicode-DFS-2016 and Zlib: allowed, but no current dependency uses them
+    # (cargo-deny warns "license-not-encountered").
+    "Unicode-DFS-2016",
+    "Zlib",
+]
+confidence-threshold = 0.9
+# Narrow per-crate exceptions. Each one needs the maintainer's agreement.
+exceptions = [
+    # Mozilla root certificate data, pulled in by reqwest's rustls-tls feature.
+    # Not dropped: replacing it changes the TLS trust store.
+    # Alternative: reqwest `rustls-tls-native-roots` (changes the trust store).
+    { allow = ["CDLA-Permissive-2.0"], crate = "webpki-roots" },
+]
+
+[advisories]
+version = 2
+yanked = "deny"
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+# Path dependencies of unpublished crates are allowed (the testbank).
+allow-wildcard-paths = true
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

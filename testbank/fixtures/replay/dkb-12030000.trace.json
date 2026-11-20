@@ -1,0 +1,1331 @@
+{
+  "format": "fints-client-trace/4",
+  "comment": [
+    "Recorded with examples/record_trace.rs at BLZ 12030000, 30 days, 16 exchanges.",
+    "Masked by the library, anonymised by Trace::from_exchanges."
+  ],
+  "client": {
+    "version": "0.1.0",
+    "outcome": "completed"
+  },
+  "bank": {
+    "blz": "12030000",
+    "bic": "BYLADEM1001"
+  },
+  "accounts": [
+    {
+      "alias": "#1",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCM",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCME",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#2",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCM",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCME",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#3",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#4",
+      "class": "checking",
+      "kontoart": 1,
+      "jobs": [
+        "HKBAZ",
+        "HKCAZ",
+        "HKCCS",
+        "HKCDB",
+        "HKCDE",
+        "HKCDL",
+        "HKCDN",
+        "HKCSA",
+        "HKCSB",
+        "HKCSE",
+        "HKCSL",
+        "HKDSB",
+        "HKDSW",
+        "HKEKP",
+        "HKFRD",
+        "HKIDA",
+        "HKIPD",
+        "HKIPS",
+        "HKIPT",
+        "HKIPZ",
+        "HKKAA",
+        "HKKAZ",
+        "HKKIF",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTIA",
+        "HKTSY",
+        "HKZDF",
+        "HKZDL",
+        "HKSPA",
+        "HKTAB"
+      ]
+    },
+    {
+      "alias": "#5",
+      "class": "credit-card",
+      "kontoart": 50,
+      "jobs": [
+        "HKCAZ",
+        "HKEKP",
+        "HKFRD",
+        "HKKAA",
+        "HKKAZ",
+        "HKPAE",
+        "HKPOF",
+        "HKQTG",
+        "HKSAL",
+        "HKTSY",
+        "HKTAB"
+      ]
+    }
+  ],
+  "exchanges": [
+    {
+      "index": 0,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3",
+          "HKSYN:3"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKVVB",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          },
+          {
+            "job": "HKSYN",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000393+300+0+1'",
+        "HNVSK:998:3+PIN:1+998+1+1::0+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@231@",
+        "HNSHK:2:4+PIN:1+999+7960724+1+1+1::0+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKIDN:3:2+280:12030000+9886728036_t+0+1'",
+        "HKVVB:4:3+0+0+1+*************************+1.0'",
+        "HKSYN:5:3+0'",
+        "HNSHA:6:2+7960724++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000005374+300+DIALOG0001+1+DIALOG0001:1'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@5146@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:4+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:940'",
+        "HIRMS:4:2:5+0020::Auftrag ausgeführt.'",
+        "HIBPA:5:3:4+33+280:12030000+Deutsche Kreditbank Aktiengesellschaft+1+1+300'",
+        "HIKOM:6:4:4+280:12030000+1+3:https?://fints.dkb.de/fints'",
+        "HIVPPS:7:1:4+1+1+0+1000:N:V:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10:HKCCM:HKCCS:HKCDE:HKCDN:HKCME:HKCSA:HKCSE:HKIDA:HKIPD:HKIPE:HKIPM:HKIPT:HKIPZ:HKTIA'",
+        "HIVOOS:8:1:4+1+1+0+N:HKCCM:HKCME:HKIPE:HKIPM'",
+        "HIVPAS:9:1:4+1+1+0'",
+        "HIAUBS:10:6:4+1+1+0+1'",
+        "HIAUBS:11:7:4+1+1+0+1'",
+        "HIAUPS:12:1:4+1+1+0+1::N::HOLD;TELE;PHOB;TELB:N'",
+        "HIBAZS:13:1:4+1+1+0+N:N:N'",
+        "HIBMES:14:1:4+1+1+0+2:28:2:28:1000:N:J'",
+        "HIBSES:15:1:4+1+1+0+2:28:2:28'",
+        "HICAZS:16:1:4+1+1+0+450:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02'",
+        "HICCMS:17:1:4+1+1+0+1000:N:J'",
+        "HICCSS:18:1:4+1+1+0'",
+        "HICDBS:19:1:4+1+1+0+N'",
+        "HICDBS:20:2:4+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HICDES:21:1:4+1+1+0+1:1:30:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICDLS:22:1:4+1+1+0+1:30:N:N'",
+        "HICDLS:23:2:4+1+1+0+1:30:N:N'",
+        "HICDNS:24:1:4+1+1+0+0:0:30:N:N:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICMES:25:1:4+1+1+0+1:360:1000:N:J'",
+        "HICSAS:26:1:4+1+1+0+1:360'",
+        "HICSBS:27:1:4+1+1+0+N:N'",
+        "HICSES:28:1:4+1+1+0+1:360'",
+        "HICSLS:29:1:4+1+1+0+N'",
+        "HIDMES:30:1:4+1+1+0+2:28:2:28:1000:N:J'",
+        "HIDSBS:31:1:4+1+1+0+N:N:56'",
+        "HIDSES:32:1:4+1+1+0+2:28:2:28'",
+        "HIDSWS:33:1:4+1+1+0+J'",
+        "HIEKPS:34:1:4+1+1+0+N:N:J'",
+        "HIEKPS:35:2:4+1+1+0+N:N:J:N'",
+        "HIFRDS:36:3:4+1+1+0+N'",
+        "HIIDAS:37:1:4+1+1+0+0:1::30:J:J:J:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPDS:38:1:4+1+1+0+1::30:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:39:1:4+1+1+0+1::30:1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:40:2:4+1+1+0+1::30:1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:41:1:4+1+1+0+1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:42:2:4+1+1+0+1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPSS:43:1:4+1+1+0+5'",
+        "HIIPTS:44:1:4+1+1+0+0:1410:30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:45:1:4+1+1+0+:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:46:2:4+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIISSS:47:1:4+1+1+0+5:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10'",
+        "HIKAAS:48:1:4+1+1+0+N:N:N:N:4;PDF;1'",
+        "HIKAAS:49:2:4+1+1+0+N:N:N:N:N:4;PDF;1'",
+        "HIKAZS:50:6:4+1+1+0+360:N:N'",
+        "HIKAZS:51:7:4+1+1+0+360:N:N'",
+        "HIKIFS:52:2:4+1+1+0'",
+        "HIKIFS:53:3:4+1+1+0'",
+        "HIKIFS:54:4:4+1+1+0+N:N'",
+        "HIPAES:55:1:4+1+1+0'",
+        "HIPOFS:56:1:4+1+1+0+N:J:000;Dokument'",
+        "HIPOFS:57:2:4+1+1+0+N:J:N:N:N:000;Dokument'",
+        "HIQTGS:58:1:4+1+1+0'",
+        "HISALS:59:6:4+1+1+0'",
+        "HISALS:60:7:4+1+1+0'",
+        "HISALS:61:8:4+1+1+0+N'",
+        "HITIAS:62:1:4+1+1+0+1::30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HITSYS:63:1:4+1+1+0+N:N'",
+        "HIWPDS:64:6:4+1+1+0+N:N:N'",
+        "HIWDUS:65:5:4+1+1+0+90'",
+        "HIWSOS:66:3:4+1+1+0+J:90'",
+        "HIWSOS:67:4:4+1+1+0+J:N:90'",
+        "HIWSOS:68:5:4+1+1+0+J:N:90'",
+        "HIZDFS:69:1:4+1+1+0+90'",
+        "HIZDLS:70:1:4+1+1+0'",
+        "HISPAS:71:1:4+1+1+0+N:J:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:72:2:4+1+1+0+N:J:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:73:3:4+1+1+0+N:J:N:N:0:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HITABS:74:4:4+1+1+0'",
+        "HITABS:75:5:4+1+1+0'",
+        "HIPINS:76:1:4+1+1+0+5:38:6:Anmeldename:Anmeldename:HKTAN:N:HKVPP:N:HKVOO:N:HKVPA:N:HKAUB:J:HKAUP:J:HKBAZ:J:HKBME:J:HKBSE:J:HKCAZ:J:HKCCM:J:HKCCS:J:HKCDB:J:HKCDE:J:HKCDL:J:HKCDN:J:HKCME:J:HKCSA:J:HKCSB:J:HKCSE:J:HKCSL:J:HKDME:J:HKDSB:J:HKDSE:J:HKDSW:J:HKEKP:N:HKFRD:J:HKIDA:J:HKIPD:J:HKIPE:J:HKIPM:J:HKIPS:N:HKIPT:J:HKIPZ:J:HKISS:N:HKKAA:J:HKKAZ:J:HKKIF:J:HKPAE:J:HKPOF:N:HKQTG:J:HKSAL:J:HKTIA:J:HKTSY:N:HKWPD:N:HKWDU:N:HKWSO:N:HKZDF:J:HKZDL:J:HKSPA:J:HKTAB:N'",
+        "HITANS:77:6:4+1+1+0+N:N:0:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HITANS:78:7:4+1+1+0+N:N:0:940:2:SealOne:Decoupled::DKB App:::DKB App:2048:N:1:N:0:0:N:J:00:0:N::999:5:3:J:J:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N:::::::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HISYN:79:4:5+atvJi/SiMM4AT6HbCZQx5G'",
+        "'",
+        "HNHBS:80:1+1'"
+      ]
+    },
+    {
+      "index": 1,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000407+300+DIALOG0001+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@175@",
+        "HNSHK:2:4+PIN:2+940+7482313+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKEND:3:1+DIALOG0001'",
+        "HNSHA:4:2+7482313++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000283+300+DIALOG0001+2+DIALOG0001:2'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@64@",
+        "HIRMG:2:2+0100::Dialog beendet'",
+        "HIRMS:3:2:3+0100::Dialog beendet'",
+        "'",
+        "HNHBS:4:1+2'"
+      ]
+    },
+    {
+      "index": 2,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKIDN:2",
+          "HKVVB:3"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKIDN"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKTAN",
+            "code": "3955",
+            "text": "Sicherheitsfreigabe erfolgt über anderen Kanal"
+          },
+          {
+            "job": "HKTAN",
+            "code": "0030",
+            "text": "Auftrag empfangen - Sicherheitsfreigabe erforderlich"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000463+300+0+1'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@280@",
+        "HNSHK:2:4+PIN:2+940+7763269+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKIDN:3:2+280:12030000+9886728036_t+atvJi/SiMM4AT6HbCZQx5G+1'",
+        "HKVVB:4:3+33+0+1+*************************+1.0'",
+        "HKTAN:5:7+4+HKIDN'",
+        "HNSHA:6:2+7763269++********'",
+        "'",
+        "HNHBS:7:1+1'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000526+300+DIALOG0002+1+DIALOG0002:1'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@286@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:5+3955::Sicherheitsfreigabe erfolgt über anderen Kanal+0030::Auftrag empfangen - Sicherheitsfreigabe erforderlich'",
+        "HITAN:4:7:5+4++DIALOG0002+*********************************+++*****************'",
+        "'",
+        "HNHBS:5:1+1'"
+      ]
+    },
+    {
+      "index": 3,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [],
+        "tan": {
+          "process": "S",
+          "for": ""
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKTAN",
+            "code": "3956",
+            "text": "Starke Kundenauthentifizierung noch ausstehend"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000414+300+DIALOG0002+2'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@182@",
+        "HNSHK:2:4+PIN:2+940+5409279+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKTAN:3:7+S++++DIALOG0002+N'",
+        "HNSHA:4:2+5409279++********'",
+        "'",
+        "HNHBS:5:1+2'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000449+300+DIALOG0002+2+DIALOG0002:2'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@209@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3956::Starke Kundenauthentifizierung noch ausstehend'",
+        "HITAN:4:7:3+S++DIALOG0002+***********************************'",
+        "'",
+        "HNHBS:5:1+2'"
+      ]
+    },
+    {
+      "index": 4,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [],
+        "tan": {
+          "process": "S",
+          "for": ""
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKTAN",
+            "code": "3920",
+            "text": "Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer"
+          },
+          {
+            "job": "HKTAN",
+            "code": "0900",
+            "text": "TAN gültig"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000414+300+DIALOG0002+3'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@182@",
+        "HNSHK:2:4+PIN:2+940+2727417+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKTAN:3:7+S++++DIALOG0002+N'",
+        "HNSHA:4:2+2727417++********'",
+        "'",
+        "HNHBS:5:1+3'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000007276+300+DIALOG0002+3+DIALOG0002:3'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@6996@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3920::Zugelassene Ein- und Zwei-Schritt-Verfahren für den Benutzer:940+0900::TAN gültig'",
+        "HITAN:4:7:3+S++DIALOG0002'",
+        "HIBPA:5:3:3+33+280:12030000+Deutsche Kreditbank Aktiengesellschaft+1+1+300'",
+        "HIKOM:6:4:3+280:12030000+1+3:https?://fints.dkb.de/fints'",
+        "HIVPPS:7:1:3+1+1+0+1000:N:V:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10:HKCCM:HKCCS:HKCDE:HKCDN:HKCME:HKCSA:HKCSE:HKIDA:HKIPD:HKIPE:HKIPM:HKIPT:HKIPZ:HKTIA'",
+        "HIVOOS:8:1:3+1+1+0+N:HKCCM:HKCME:HKIPE:HKIPM'",
+        "HIVPAS:9:1:3+1+1+0'",
+        "HIAUBS:10:6:3+1+1+0+1'",
+        "HIAUBS:11:7:3+1+1+0+1'",
+        "HIAUPS:12:1:3+1+1+0+1::N::HOLD;TELE;PHOB;TELB:N'",
+        "HIBAZS:13:1:3+1+1+0+N:N:N'",
+        "HIBMES:14:1:3+1+1+0+2:28:2:28:1000:N:J'",
+        "HIBSES:15:1:3+1+1+0+2:28:2:28'",
+        "HICAZS:16:1:3+1+1+0+450:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08:urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.02'",
+        "HICCMS:17:1:3+1+1+0+1000:N:J'",
+        "HICCSS:18:1:3+1+1+0'",
+        "HICDBS:19:1:3+1+1+0+N'",
+        "HICDBS:20:2:3+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HICDES:21:1:3+1+1+0+1:1:30:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICDLS:22:1:3+1+1+0+1:30:N:N'",
+        "HICDLS:23:2:3+1+1+0+1:30:N:N'",
+        "HICDNS:24:1:3+1+1+0+0:0:30:N:N:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930'",
+        "HICMES:25:1:3+1+1+0+1:360:1000:N:J'",
+        "HICSAS:26:1:3+1+1+0+1:360'",
+        "HICSBS:27:1:3+1+1+0+N:N'",
+        "HICSES:28:1:3+1+1+0+1:360'",
+        "HICSLS:29:1:3+1+1+0+N'",
+        "HIDMES:30:1:3+1+1+0+2:28:2:28:1000:N:J'",
+        "HIDSBS:31:1:3+1+1+0+N:N:56'",
+        "HIDSES:32:1:3+1+1+0+2:28:2:28'",
+        "HIDSWS:33:1:3+1+1+0+J'",
+        "HIEKPS:34:1:3+1+1+0+N:N:J'",
+        "HIEKPS:35:2:3+1+1+0+N:N:J:N'",
+        "HIFRDS:36:3:3+1+1+0+N'",
+        "HIIDAS:37:1:3+1+1+0+0:1::30:J:J:J:J:J:J:J:J:J:J:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPDS:38:1:3+1+1+0+1::30:0102030612:010203040506070809101112131415161718192021222324252627282930:::N:U:00;000000;020000;00;083000;123000;00;180000;235959::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:39:1:3+1+1+0+1::30:1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPES:40:2:3+1+1+0+1::30:1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:41:1:3+1+1+0+1000:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPMS:42:2:3+1+1+0+1000:N:N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPSS:43:1:3+1+1+0+5'",
+        "HIIPTS:44:1:3+1+1+0+0:1410:30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:45:1:3+1+1+0+:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIIPZS:46:2:3+1+1+0+N::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HIISSS:47:1:3+1+1+0+5:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.002.001.10'",
+        "HIKAAS:48:1:3+1+1+0+N:N:N:N:4;PDF;1'",
+        "HIKAAS:49:2:3+1+1+0+N:N:N:N:N:4;PDF;1'",
+        "HIKAZS:50:6:3+1+1+0+360:N:N'",
+        "HIKAZS:51:7:3+1+1+0+360:N:N'",
+        "HIKIFS:52:2:3+1+1+0'",
+        "HIKIFS:53:3:3+1+1+0'",
+        "HIKIFS:54:4:3+1+1+0+N:N'",
+        "HIPAES:55:1:3+1+1+0'",
+        "HIPOFS:56:1:3+1+1+0+N:J:000;Dokument'",
+        "HIPOFS:57:2:3+1+1+0+N:J:N:N:N:000;Dokument'",
+        "HIQTGS:58:1:3+1+1+0'",
+        "HISALS:59:6:3+1+1+0'",
+        "HISALS:60:7:3+1+1+0'",
+        "HISALS:61:8:3+1+1+0+N'",
+        "HITIAS:62:1:3+1+1+0+1::30:N:U:::::urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09'",
+        "HITSYS:63:1:3+1+1+0+N:N'",
+        "HIWPDS:64:6:3+1+1+0+N:N:N'",
+        "HIWDUS:65:5:3+1+1+0+90'",
+        "HIWSOS:66:3:3+1+1+0+J:90'",
+        "HIWSOS:67:4:3+1+1+0+J:N:90'",
+        "HIWSOS:68:5:3+1+1+0+J:N:90'",
+        "HIZDFS:69:1:3+1+1+0+90'",
+        "HIZDLS:70:1:3+1+1+0'",
+        "HISPAS:71:1:3+1+1+0+N:J:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:72:2:3+1+1+0+N:J:N:N:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HISPAS:73:3:3+1+1+0+N:J:N:N:0:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.03:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.001.001.09:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.02:urn?:iso?:std?:iso?:20022?:tech?:xsd?:pain.008.001.08'",
+        "HITABS:74:4:3+1+1+0'",
+        "HITABS:75:5:3+1+1+0'",
+        "HIPINS:76:1:3+1+1+0+5:38:6:Anmeldename:Anmeldename:HKTAN:N:HKVPP:N:HKVOO:N:HKVPA:N:HKAUB:J:HKAUP:J:HKBAZ:J:HKBME:J:HKBSE:J:HKCAZ:J:HKCCM:J:HKCCS:J:HKCDB:J:HKCDE:J:HKCDL:J:HKCDN:J:HKCME:J:HKCSA:J:HKCSB:J:HKCSE:J:HKCSL:J:HKDME:J:HKDSB:J:HKDSE:J:HKDSW:J:HKEKP:N:HKFRD:J:HKIDA:J:HKIPD:J:HKIPE:J:HKIPM:J:HKIPS:N:HKIPT:J:HKIPZ:J:HKISS:N:HKKAA:J:HKKAZ:J:HKKIF:J:HKPAE:J:HKPOF:N:HKQTG:J:HKSAL:J:HKTIA:J:HKTSY:N:HKWPD:N:HKWDU:N:HKWSO:N:HKZDF:J:HKZDL:J:HKSPA:J:HKTAB:N'",
+        "HITANS:77:6:3+1+1+0+N:N:0:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HITANS:78:7:3+1+1+0+N:N:0:940:2:SealOne:Decoupled::DKB App:::DKB App:2048:N:1:N:0:0:N:J:00:0:N::999:5:3:J:J:910:2:HHD1.3.0:::chipTAN manuell:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N:::::::913:2:Q1S:Secoder_UC:1.2.0:chipTAN QR:6:1:TAN-Nummer:2048:N:1:N:0:0:N:J:00:0:N'",
+        "HIUPA:79:4:3+9886728036_t+0+0'",
+        "HIUPD:80:6:3+5565824196:******************************:280:12030000+DE08120300005565824196+9886728036_t+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCM:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCME:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:81:6:3+5565824197:******************************:280:12030000+DE78120300005565824197+9886728036_t+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCM:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCME:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:82:6:3+5565824198:******************************:280:12030000+DE51120300005565824198+9886728036_t+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:83:6:3+5565824199:******************************:280:12030000+DE24120300005565824199+9886728036_t+1+EUR+########+########+########++HKBAZ:1+HKCAZ:1+HKCCS:1+HKCDB:1+HKCDE:1+HKCDL:1+HKCDN:1+HKCSA:1+HKCSB:1+HKCSE:1+HKCSL:1+HKDSB:1+HKDSW:1+HKEKP:1+HKFRD:1+HKIDA:1+HKIPD:1+HKIPS:1+HKIPT:1+HKIPZ:1+HKKAA:1+HKKAZ:1+HKKIF:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTIA:1+HKTSY:1+HKZDF:1+HKZDL:1+HKSPA:1+HKTAB:1'",
+        "HIUPD:84:6:3+7638917565824200:******************************:280:12030000++9886728036_t+50+EUR+########+########+########++HKCAZ:1+HKEKP:1+HKFRD:1+HKKAA:1+HKKAZ:1+HKPAE:1+HKPOF:1+HKQTG:1+HKSAL:1+HKTSY:1+HKTAB:1'",
+        "'",
+        "HNHBS:85:1+3'"
+      ]
+    },
+    {
+      "index": 5,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:8"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000486+300+DIALOG0002+4'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@274@",
+        "HNSHK:2:4+PIN:2+940+2368783+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKSAL:3:8+DE08120300005565824196:BYLADEM1001:5565824196:******************************:280:12030000+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+2368783++********'",
+        "'",
+        "HNHBS:6:1+4'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000580+300+DIALOG0002+4+DIALOG0002:4'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@361@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:5:8:3+DE08120300005565824196:BYLADEM1001:5565824196:******************************:280:12030000+########+EUR+C:#,##:EUR:20261107++#,##:EUR'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+4'"
+      ]
+    },
+    {
+      "index": 6,
+      "account": "#1",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "3010",
+            "text": "Es liegen keine Einträge vor."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000558+300+DIALOG0002+5'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@346@",
+        "HNSHK:2:4+PIN:2+940+2335031+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKCAZ:3:1+DE08120300005565824196:BYLADEM1001:5565824196:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+N+20261008+20261107'",
+        "HKTAN:4:7+4+HKCAZ'",
+        "HNSHA:5:2+2335031++********'",
+        "'",
+        "HNHBS:6:1+5'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001467+300+DIALOG0002+5+DIALOG0002:5'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@1231@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3010::Es liegen keine Einträge vor.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HICAZ:5:1:3+DE08120300005565824196:BYLADEM1001:5565824196:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+@843@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>2WHQVERJC8ZD</MsgId><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.000000+00:00</CreDtTm><Acct><Id><IBAN>DE08120300005565824196</IBAN></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-10-08</Dt></Dt></Bal><Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-11-07</Dt></Dt></Bal></Rpt></BkToCstmrAcctRpt></Document>'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+5'"
+      ]
+    },
+    {
+      "index": 7,
+      "account": "#2",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:8"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000486+300+DIALOG0002+6'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@274@",
+        "HNSHK:2:4+PIN:2+940+8214529+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKSAL:3:8+DE78120300005565824197:BYLADEM1001:5565824197:******************************:280:12030000+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+8214529++********'",
+        "'",
+        "HNHBS:6:1+6'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000583+300+DIALOG0002+6+DIALOG0002:6'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@361@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:5:8:3+DE78120300005565824197:BYLADEM1001:5565824197:******************************:280:12030000+########+EUR+C:#,##:EUR:20261107++#,##:EUR'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+6'"
+      ]
+    },
+    {
+      "index": 8,
+      "account": "#2",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "3010",
+            "text": "Es liegen keine Einträge vor."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000558+300+DIALOG0002+7'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@346@",
+        "HNSHK:2:4+PIN:2+940+3735562+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKCAZ:3:1+DE78120300005565824197:BYLADEM1001:5565824197:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+N+20261008+20261107'",
+        "HKTAN:4:7+4+HKCAZ'",
+        "HNSHA:5:2+3735562++********'",
+        "'",
+        "HNHBS:6:1+7'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000001474+300+DIALOG0002+7+DIALOG0002:7'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@1232@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+3010::Es liegen keine Einträge vor.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HICAZ:5:1:3+DE78120300005565824197:BYLADEM1001:5565824197:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+@844@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>7AK7O6Q6NEDE</MsgId><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><Acct><Id><IBAN>DE78120300005565824197</IBAN></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-10-08</Dt></Dt></Bal><Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-11-07</Dt></Dt></Bal></Rpt></BkToCstmrAcctRpt></Document>'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+7'"
+      ]
+    },
+    {
+      "index": 9,
+      "account": "#3",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:8"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000486+300+DIALOG0002+8'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@274@",
+        "HNSHK:2:4+PIN:2+940+6295917+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKSAL:3:8+DE51120300005565824198:BYLADEM1001:5565824198:******************************:280:12030000+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+6295917++********'",
+        "'",
+        "HNHBS:6:1+8'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000584+300+DIALOG0002+8+DIALOG0002:8'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@361@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:5:8:3+DE51120300005565824198:BYLADEM1001:5565824198:******************************:280:12030000+########+EUR+C:#,##:EUR:20261107++#,##:EUR'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+8'"
+      ]
+    },
+    {
+      "index": 10,
+      "account": "#3",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000558+300+DIALOG0002+9'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@346@",
+        "HNSHK:2:4+PIN:2+940+4818018+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKCAZ:3:1+DE51120300005565824198:BYLADEM1001:5565824198:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+N+20261008+20261107'",
+        "HKTAN:4:7+4+HKCAZ'",
+        "HNSHA:5:2+4818018++********'",
+        "'",
+        "HNHBS:6:1+9'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000111836+300+DIALOG0002+9+DIALOG0002:9'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@105143@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HICAZ:5:1:3+DE51120300005565824198:BYLADEM1001:5565824198:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+@101670@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>B15EI5JB69N5</MsgId><CreDtTm>2026-11-07T12:00:00.000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><Acct><Id><IBAN>DE51120300005565824198</IBAN></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-10-08</Dt></Dt></Bal><Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-11-07</Dt></Dt></Bal><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-08</Dt></BookgDt><ValDt><Dt>2026-10-08</Dt></ValDt><AcctSvcrRef>QMIZ07HP5BNJ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>JPSFXY791N6U</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-08</Dt></BookgDt><ValDt><Dt>2026-10-08</Dt></ValDt><AcctSvcrRef>4D8U0K3093AH</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>WLRL2X01GXXA</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-08</Dt></BookgDt><ValDt><Dt>2026-10-08</Dt></ValDt><AcctSvcrRef>VZ1QB2XNZEL2</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>C8HLE62ZGAOC</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-08</Dt></BookgDt><ValDt><Dt>2026-10-08</Dt></ValDt><AcctSvcrRef>FNTO8XWKDK3S</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>MCBLU0SVKB3T</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-08</Dt></BookgDt><ValDt><Dt>2026-10-08</Dt></ValDt><AcctSvcrRef>8DSN5D1AY8ZJ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>PKOORXYKNLLM</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-09</Dt></BookgDt><ValDt><Dt>2026-10-09</Dt></ValDt><AcctSvcrRef>IL9NOSGP2LZK</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>0B5Z9HYPQCVO</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-09</Dt></BookgDt><ValDt><Dt>2026-10-09</Dt></ValDt><AcctSvcrRef>OITYI1B0RJGM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5YL88V0CGUJF</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-09</Dt></BookgDt><ValDt><Dt>2026-10-09</Dt></ValDt><AcctSvcrRef>WGYHWCOGRL13</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>QRBUZA4AY00G</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>YAOJZM67Z2SW</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>OSCETHJ8NY35</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>8L8XH1X89PJ1</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>XTU2M88VZV4C</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>YZ8JU03D9E4I</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5KQSJ3EZBUO5</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>RMG60ZJ1R02H</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>88S4XWN4E3BE</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>28L7VG0GS7Y4</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>UBVCVWW1TQ2Z</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-10</Dt></BookgDt><ValDt><Dt>2026-10-10</Dt></ValDt><AcctSvcrRef>WFF64TU7YPQQ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5ESGTL26YXGX</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>VBQXCLEEYLJB</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>TQ9ZNRV77OXJ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>CFBHEHXLE019</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>KV3HSLOQWNL2</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>ML1JLJ7CDG9D</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>IGEF8WTEWMGB</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>IIO54V7VMPUV</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5P57Y9Q6JLOI</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><AcctSvcrRef>VL9TJJEJBTSM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>C3JLXAQ7SGMY</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>7UE7MB6VTG8C</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>NSRWVPBRG8SV</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>KS1OGBRI6QUS</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>17E6XBBEESV4</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>HMTV1XSXXRES</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>7HAMO2BM6M7Q</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5HQJ3D0XCZ3A</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>MJC6N2LG88UF</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>DGHJK894APER</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>RAPPKNFWIADL</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>KH9WGSWJF4JY</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>ARXLTUA19TY7</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>J14SG4UDZ2BH</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-16</Dt></BookgDt><ValDt><Dt>2026-10-16</Dt></ValDt><AcctSvcrRef>HSYQLNTV4HBC</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>R41HGI1U24X2</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-16</Dt></BookgDt><ValDt><Dt>2026-10-16</Dt></ValDt><AcctSvcrRef>QF0RX3YJAI4Y</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>V2TRYJ6TV105</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-16</Dt></BookgDt><ValDt><Dt>2026-10-16</Dt></ValDt><AcctSvcrRef>Y3L9K7T13DOU</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>XHHBX86LUOPC</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-16</Dt></BookgDt><ValDt><Dt>2026-10-16</Dt></ValDt><AcctSvcrRef>QRTXULTT01EI</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>0D3XG0EOVRG8</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>QGU51LH4IQ9L</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>CMRAC43Q0G1Z</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>YNI9EYRRJPMM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>N5YUI8OVL9AA</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>S3WQEN7M2HO1</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>NROJTYNPVTM2</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>QF41UEGWO3XW</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>3G9CSEFCUAQT</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>2JBCEC305TP6</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE70000000007565824206</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>OB37B87FEY0D</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE43000000007565824207</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>Y3CJXRM5Q1JK</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+7001+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+7001+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>8VGQCCIR2144</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>7YMTM3RGC1FK</EndToEndId><MndtId>CDYPY4V9TDSM</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>7TU1PRA9KJUB</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>OU0Z8WVIL9R7</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>GI010GU95SG3</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>AXVZNNJ0X6MD</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE86000000007565824209</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>JPTTAMRD2ROQ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>V8FDGCCSS6YP</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>9OKNO8J2XU6Z</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>WCIX6J1OYPIZ</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-22</Dt></BookgDt><ValDt><Dt>2026-10-22</Dt></ValDt><AcctSvcrRef>R4H8XFURU7GY</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>CZARGHZEPK0M</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-23</Dt></BookgDt><ValDt><Dt>2026-10-23</Dt></ValDt><AcctSvcrRef>KFSPX6BQYI7P</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>RI4VOFVRCGVC</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-24</Dt></BookgDt><ValDt><Dt>2026-10-24</Dt></ValDt><AcctSvcrRef>PMT0XWPN7UED</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>SVQMPQO0XUAW</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-24</Dt></BookgDt><ValDt><Dt>2026-10-24</Dt></ValDt><AcctSvcrRef>N21WV03RPIQB</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>TKH2TYSE3J37</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-24</Dt></BookgDt><ValDt><Dt>2026-10-24</Dt></ValDt><AcctSvcrRef>S9IB3IDQ2AVB</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>5SY5TRE36XSF</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-27</Dt></BookgDt><ValDt><Dt>2026-10-27</Dt></ValDt><AcctSvcrRef>EH6CZILBKAHA</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>866YT6CQPORU</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-27</Dt></BookgDt><ValDt><Dt>2026-10-27</Dt></ValDt><AcctSvcrRef>AIAMPQ3GKOSE</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>4S5R144IYXER</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-27</Dt></BookgDt><ValDt><Dt>2026-10-27</Dt></ValDt><AcctSvcrRef>8705OSKCE95J</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>1XLMFT0YCMZ7</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>1EPP0EJ0S16R</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>2NW7PCQ0DL64</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE59000000007565824210</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>2CKOXUYSO8WY</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>KILQPSZWGYO6</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE59000000007565824210</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>WA6QT2B04W27</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>7ZQO4ZBF4JVF</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>MDA5Z5WY3ACC</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>IZ55I14LK59S</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>CZH24D9OUCFK</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>3Q2L6QSL4NTN</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>UO1NHD0Z614M</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>P34WV28Q70DQ</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-30</Dt></BookgDt><ValDt><Dt>2026-10-30</Dt></ValDt><AcctSvcrRef>W48IAZTBGYUB</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>4WWF0JJ8O7CN</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-30</Dt></BookgDt><ValDt><Dt>2026-10-30</Dt></ValDt><AcctSvcrRef>MXL683P7J0RG</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>4QNJTL1W53B5</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-31</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>47QPI0Z3NJ5E</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>TZ4TTKT5GR3T</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-31</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>5PD20Q44PWG2</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>XSY34S4GKOEW</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-31</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>G4JB9PTH1YZA</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>VIEIWNXAANSP</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>UWCWZY6XM56T</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>FT5ECN7LVRA2</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-10-31</Dt></ValDt><AcctSvcrRef>OKXC6I0QAKQ0</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>N9H92BRPKF1R</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>LPZHY4T55GZ0</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>C7I1RCLJFWQ3</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>XCPM7FEVOVIT</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>W6CGKW5E5MJE</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>6UCR11243V3T</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9301+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>MIVJMVI7NL8K</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>84XKUMX3WBKY</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>JKZKOBAUHHVC</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>H65RGG4CHMYG</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>FHDSY8MNQTKV</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>JFGCZI45KOVK</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>9HCGSCHVUVI8</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>JIB170KCKG8T</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>38SA60XOVPIN</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>QYL5VQJ37GD4</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>JY2JVRS9IJ3P</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>FA2P9RICC0PR</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>ZK01NW3JK1DA</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>QZQOPQ3QIWJ4</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-03</Dt></BookgDt><ValDt><Dt>2026-11-03</Dt></ValDt><AcctSvcrRef>K5JQQ6SHVI4Y</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>WY5ENQ7KPR3Y</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-04</Dt></BookgDt><ValDt><Dt>2026-11-04</Dt></ValDt><AcctSvcrRef>TM4TZHUTX3XS</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>FAYJITE4LUFK</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-05</Dt></BookgDt><ValDt><Dt>2026-11-05</Dt></ValDt><AcctSvcrRef>JLVXBYBQVSQQ</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>2G9ZZRG985D8</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>OCHWSA5S1OSO</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+177+9310+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE70000000007565824206</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>H8ECN3ZBALSM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>2OO4AR61NGM3</EndToEndId><MndtId>JY2F4R0YG9FL</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE81000000007565824202</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>XFL7HC3EAK1N</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>PZ3YAYY82ANF</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>8CQZ1SEKHO41</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>XI4GNRX3IMNR</EndToEndId><MndtId>R3U9M98XNX2D</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>M9CHHFQLTKAA</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE70000000007565824206</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><AcctSvcrRef>3JEQAYTK0WVG</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RRCT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+168+9249+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-07</Dt></BookgDt><ValDt><Dt>2026-11-07</Dt></ValDt><AcctSvcrRef>CBUO8VSYFY0G</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>MUODJ5PNUC0D</EndToEndId><MndtId>5X8KJO0HN2DO</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-07</Dt></BookgDt><ValDt><Dt>2026-11-07</Dt></ValDt><AcctSvcrRef>71NS4VQQJJP6</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>K6CXKI8HAU8X</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+106+9300+002</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE54000000007565824203</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry></Rpt></BkToCstmrAcctRpt></Document>+@3085@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>329OWS3ECYYO</MsgId><CreDtTm>2026-11-07T12:00:00.000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><Acct><Id><IBAN>DE51120300005565824198</IBAN></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>PDNG</Cd></Sts><BookgDt><Dt>2026-11-07</Dt></BookgDt><AcctSvcrRef>ABFEEPJK07HD</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>1WFUFF5Q28NO</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr></RltdPties><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>PDNG</Cd></Sts><BookgDt><Dt>2026-11-07</Dt></BookgDt><AcctSvcrRef>8YLWCAKRBJK8</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>M30D0PW6DNQ2</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr></RltdPties><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>PDNG</Cd></Sts><BookgDt><Dt>2026-11-07</Dt></BookgDt><AcctSvcrRef>2JOG9IVCDQRM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>K7WDXUE1M1GE</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCOL+006+0000+005</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr></RltdPties><Purp><Cd>IDCP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry></Rpt></BkToCstmrAcctRpt></Document>'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+9'"
+      ]
+    },
+    {
+      "index": 11,
+      "account": "#4",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:8"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000488+300+DIALOG0002+10'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@274@",
+        "HNSHK:2:4+PIN:2+940+6796782+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKSAL:3:8+DE24120300005565824199:BYLADEM1001:5565824199:******************************:280:12030000+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+6796782++********'",
+        "'",
+        "HNHBS:6:1+10'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000588+300+DIALOG0002+10+DIALOG0002:10'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@361@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:5:8:3+DE24120300005565824199:BYLADEM1001:5565824199:******************************:280:12030000+########+EUR+C:#,##:EUR:20261107++#,##:EUR'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+10'"
+      ]
+    },
+    {
+      "index": 12,
+      "account": "#4",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000560+300+DIALOG0002+11'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@346@",
+        "HNSHK:2:4+PIN:2+940+9995185+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKCAZ:3:1+DE24120300005565824199:BYLADEM1001:5565824199:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+N+20261008+20261107'",
+        "HKTAN:4:7+4+HKCAZ'",
+        "HNSHA:5:2+9995185++********'",
+        "'",
+        "HNHBS:6:1+11'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000020609+300+DIALOG0002+11+DIALOG0002:11'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@19194@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HICAZ:5:1:3+DE24120300005565824199:BYLADEM1001:5565824199:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+@18814@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>6ZPCBXXU31TC</MsgId><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><Acct><Id><IBAN>DE24120300005565824199</IBAN></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-10-08</Dt></Dt></Bal><Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-11-07</Dt></Dt></Bal><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-14</Dt></BookgDt><ValDt><Dt>2026-10-14</Dt></ValDt><AcctSvcrRef>QWSKK3VI47K2</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>S77BEP4LNNBZ</EndToEndId><MndtId>M5BNSBX7446L</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+888</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE97000000007565824205</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><AcctSvcrRef>XJA7TKWPRLI0</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE32000000007565824211</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>I2TZTGZH1W98</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE05000000007565824212</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>BS9QABYEWIGP</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE27000000007565824204</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>QN3ZKD8RXUP2</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9226+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>DR62DWOJ8RXA</EndToEndId><MndtId>Y72GY7NBHZD7</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9226+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE75000000007565824213</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>9SFTD4CXM8VU</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE11000000007565824201</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>SWF12TFAXS9D</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>AWQ0435E0CFB</EndToEndId><MndtId>G40OEYQVNVZU</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9262+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE48000000007565824214</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>X803ADNM4S2M</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE21000000007565824215</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>LVDSVL7WXCBT</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9263+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9263+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE91000000007565824216</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><AcctSvcrRef>SLV8JLS7MRGM</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+152+9253+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE64000000007565824217</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>12VWE6NJIGUA</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE37000000007565824218</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>34ZO7YWWA46B</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NSTO+117+7000+997</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE10000000007565824219</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><Purp><Cd>RINP</Cd></Purp><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-21</Dt></BookgDt><ValDt><Dt>2026-10-21</Dt></ValDt><AcctSvcrRef>0I5FRKMQG0JE</AcctSvcrRef><BkTxCd><Domn><Cd>ACMT</Cd><Fmly><Cd>MDOP</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCHG+808+7080+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>ACMT</Cd><Fmly><Cd>MDOP</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NCHG+808+7080+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr></RltdPties><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-22</Dt></BookgDt><ValDt><Dt>2026-10-22</Dt></ValDt><AcctSvcrRef>YNXK8W9SEP30</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>PGFBXRIWQ15H</EndToEndId><MndtId>7XNIIRPAO88R</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE80000000007565824220</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-28</Dt></BookgDt><ValDt><Dt>2026-10-28</Dt></ValDt><AcctSvcrRef>YI546SKP0TK7</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9263+000</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>9755BL2GG1VT</EndToEndId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NTRF+166+9263+000</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE53000000007565824221</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm></Pty></Cdtr><CdtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-05</Dt></BookgDt><ValDt><Dt>2026-11-05</Dt></ValDt><AcctSvcrRef>1B1QMX7WLL2T</AcctSvcrRef><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Refs><EndToEndId>26GGUZ8DHN0E</EndToEndId><MndtId>YWQKVKVH5Z0O</MndtId></Refs><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>PMNT</Cd><Fmly><Cd>RDDT</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NDDT+105+9248+992</Cd><Issr>########</Issr></Prtry></BkTxCd><RltdPties><Dbtr><Pty><Nm>########</Nm></Pty></Dbtr><DbtrAcct><Id><IBAN>DE16000000007565824208</IBAN></Id></DbtrAcct><Cdtr><Pty><Nm>########</Nm><Id><PrvtId><Othr><Id>########</Id></Othr></PrvtId></Id></Pty></Cdtr><CdtrAcct><Id><IBAN>DE26000000007565824222</IBAN></Id></CdtrAcct></RltdPties><RltdAgts><DbtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></DbtrAgt><CdtrAgt><FinInstnId><BICFI>########</BICFI></FinInstnId></CdtrAgt></RltdAgts><RmtInf><Ustrd>########</Ustrd></RmtInf></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry></Rpt></BkToCstmrAcctRpt></Document>'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+11'"
+      ]
+    },
+    {
+      "index": 13,
+      "account": "#5",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKSAL:8"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKSAL"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKSAL",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000461+300+DIALOG0002+12'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@247@",
+        "HNSHK:2:4+PIN:2+940+4245805+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKSAL:3:8+::7638917565824200:******************************:280:12030000+N'",
+        "HKTAN:4:7+4+HKSAL'",
+        "HNSHA:5:2+4245805++********'",
+        "'",
+        "HNHBS:6:1+12'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000558+300+DIALOG0002+12+DIALOG0002:12'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@324@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HISAL:5:8:3+::7638917565824200:******************************:280:12030000+########+EUR+C:#,##:EUR:20261107'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+12'"
+      ]
+    },
+    {
+      "index": 14,
+      "account": "#5",
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKCAZ:1"
+        ],
+        "tan": {
+          "process": "4",
+          "for": "HKCAZ"
+        }
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "3060",
+            "text": "Teilweise liegen Warnungen vor."
+          },
+          {
+            "code": "0010",
+            "text": "Nachricht entgegengenommen."
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKCAZ",
+            "code": "0020",
+            "text": "Auftrag ausgeführt."
+          },
+          {
+            "job": "HKTAN",
+            "code": "3076",
+            "text": "Keine starke Authentifizierung erforderlich."
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000533+300+DIALOG0002+13'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@319@",
+        "HNSHK:2:4+PIN:2+940+1150662+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKCAZ:3:1+::7638917565824200:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+N+20261008+20261107'",
+        "HKTAN:4:7+4+HKCAZ'",
+        "HNSHA:5:2+1150662++********'",
+        "'",
+        "HNHBS:6:1+13'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000005550+300+DIALOG0002+13+DIALOG0002:13'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@5219@",
+        "HIRMG:2:2+3060::Teilweise liegen Warnungen vor.+0010::Nachricht entgegengenommen.'",
+        "HIRMS:3:2:3+0020::Auftrag ausgeführt.'",
+        "HIRMS:4:2:4+3076::Keine starke Authentifizierung erforderlich.'",
+        "HICAZ:5:1:3+::7638917565824200:******************************:280:12030000+urn?:iso?:std?:iso?:20022?:tech?:xsd?:camt.052.001.08+@4867@<?xml version=\"1.0\" encoding=\"utf-8\"?><Document xmlns=\"urn:iso:std:iso:20022:tech:xsd:camt.052.001.08\"><BkToCstmrAcctRpt><GrpHdr><MsgId>D3DXH6WIV3I8</MsgId><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><MsgPgntn><PgNb>#</PgNb><LastPgInd>true</LastPgInd></MsgPgntn></GrpHdr><Rpt><Id>########</Id><CreDtTm>2026-11-07T12:00:00.0000000+00:00</CreDtTm><Acct><Id><Othr><Id>7638917565824200</Id></Othr></Id><Ccy>EUR</Ccy><Svcr><FinInstnId><BICFI>########</BICFI><Othr><Id>########</Id><Issr>########</Issr></Othr></FinInstnId></Svcr></Acct><Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-10-08</Dt></Dt></Bal><Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-11-07</Dt></Dt></Bal><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-09</Dt></BookgDt><ValDt><Dt>2026-10-09</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-13</Dt></BookgDt><ValDt><Dt>2026-10-13</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-17</Dt></BookgDt><ValDt><Dt>2026-10-17</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-10-20</Dt></BookgDt><ValDt><Dt>2026-10-20</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>CRDT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry><Ntry><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><Sts><Cd>BOOK</Cd></Sts><BookgDt><Dt>2026-11-06</Dt></BookgDt><ValDt><Dt>2026-11-06</Dt></ValDt><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><NtryDtls><TxDtls><Amt Ccy=\"EUR\">#.##</Amt><CdtDbtInd>DBIT</CdtDbtInd><BkTxCd><Domn><Cd>XTND</Cd><Fmly><Cd>NTAV</Cd><SubFmlyCd>########</SubFmlyCd></Fmly></Domn><Prtry><Cd>NMSC</Cd><Issr>########</Issr></Prtry></BkTxCd><RmtInf><Ustrd>########</Ustrd></RmtInf><RltdDts><TxDtTm>########</TxDtTm></RltdDts></TxDtls></NtryDtls><AddtlNtryInf>########</AddtlNtryInf></Ntry></Rpt></BkToCstmrAcctRpt></Document>'",
+        "HITAN:6:7:4+4++noref+***********'",
+        "'",
+        "HNHBS:7:1+13'"
+      ]
+    },
+    {
+      "index": 15,
+      "account": null,
+      "retry_of": null,
+      "sent": {
+        "jobs": [
+          "HKEND:1"
+        ],
+        "tan": null
+      },
+      "answer": {
+        "message": [
+          {
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ],
+        "segments": [
+          {
+            "job": "HKEND",
+            "code": "0100",
+            "text": "Dialog beendet"
+          }
+        ]
+      },
+      "failed": false,
+      "error": null,
+      "notes": [],
+      "request": [
+        "HNHBK:1:3+000000000409+300+DIALOG0002+14'",
+        "HNVSK:998:3+PIN:2+998+1+1::atvJi/SiMM4AT6HbCZQx5G+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:9886728036_t:V:0:0+0'",
+        "HNVSD:999:1+@175@",
+        "HNSHK:2:4+PIN:2+940+7464293+1+1+1::atvJi/SiMM4AT6HbCZQx5G+1+1:20261107:120000+1:999:1+6:10:16+280:12030000:9886728036_t:S:0:0'",
+        "HKEND:3:1+DIALOG0002'",
+        "HNSHA:4:2+7464293++********'",
+        "'",
+        "HNHBS:5:1+14'"
+      ],
+      "response": [
+        "HNHBK:1:3+000000000286+300+DIALOG0002+14+DIALOG0002:14'",
+        "HNVSK:998:3+PIN:1+998+1+2+1:20261107:120000+2:2:13:@8@********:5:1+280:12030000:54928956:V:0:0+0'",
+        "HNVSD:999:1+@64@",
+        "HIRMG:2:2+0100::Dialog beendet'",
+        "HIRMS:3:2:3+0100::Dialog beendet'",
+        "'",
+        "HNHBS:4:1+14'"
+      ]
+    }
+  ]
+}
