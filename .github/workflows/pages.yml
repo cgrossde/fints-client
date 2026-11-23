@@ -18,14 +18,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     # Pages of a private repository needs a paid plan; publish once the
     # repository is public.
     if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
       - run: mkdir _site && cp docs/architecture.html _site/index.html
@@ -40,5 +37,15 @@ jobs:
           path: ${{ runner.temp }}/artifact.tar
           retention-days: 1
           if-no-files-found: error
+
+  # A job of its own, as in GitHub's Pages template: within the uploading
+  # job the artifact is not yet listed when deploy-pages looks for it.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
