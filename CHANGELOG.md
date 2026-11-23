@@ -4,4 +4,6 @@ What changed for users of the library, newest first. New entries go under `Unrel
 
 ## Unreleased
 
-Initial release.
+## 0.1.0 — 2026-11-23
+
+Initial release. Validated live at DKB, comdirect and Consorsbank: login, balances and transactions of every account, a SEPA transfer, and the payee check where the bank offers it (DKB, comdirect); holdings at comdirect and Consorsbank.

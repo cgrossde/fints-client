@@ -8,7 +8,7 @@ Report it privately: on the repository's GitHub page open **Security**, then **R
 
 Tell us what you observed, the version or commit, and how to reproduce it against the bundled test bank if you can ([testbank/README.md](testbank/README.md)).
 
-Only the latest release gets fixes. Before 0.1.0 that is the `main` branch.
+Only the latest release gets fixes.
 
 ## What counts
 

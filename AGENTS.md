@@ -22,7 +22,7 @@ Bank-specific behaviour goes into a profile in `banks` and the bank's page under
 - **Caller-owned state.** Session state and paused dialogs are versioned, serialisable values; the library writes no files.
 - **Declarative segments.** A new segment version is a `#[derive(Segment)]` struct in `codec` plus a wire-string test.
 - **Typed errors.** Bank return codes map to error and status variants.
-- **No compatibility before 0.1.0.** Change APIs, trace and state formats freely; write no shims, serde defaults or parsers for old data.
+- **Breaking changes raise the minor version.** Within 0.x, a change to the public API, the trace format or the state format goes into the next minor version (0.2, 0.3, ...) with a CHANGELOG entry that says what to change; write no shims, serde defaults or parsers for old data.
 - **Raw fallback.** An unparseable segment becomes `RawSegment` with its error, reported to the caller.
 
 ## Docs
