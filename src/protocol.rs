@@ -2024,21 +2024,8 @@ fn parse_response(data: &[u8], expected_msg_num: u16) -> Result<Response> {
         );
     }
 
-    // The size in HNHBK is mandatory; a bank that gets it wrong is still
-    // read (the answer may be complete), but the mismatch is logged: it is
-    // the first sign of a cut or re-encoded answer.
-    if let Some(stated) = outer_segments
-        .iter()
-        .find(|s| s.segment_type() == "HNHBK")
-        .and_then(read::message_size)
-        && stated != data.len() as u64
-    {
-        warn!(
-            "HNHBK states {} bytes, the answer has {} bytes",
-            stated,
-            data.len()
-        );
-    }
+    // The size in HNHBK counts the answer with its envelope, which is gone
+    // here; `transport::exchange` checks it on the answer as it arrived.
 
     let all_segments = unwrap_hnvsd(outer_segments)?;
 

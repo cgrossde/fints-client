@@ -9,7 +9,7 @@
 use std::future::Future;
 use std::pin::Pin;
 use std::sync::Arc;
-use tracing::trace;
+use tracing::{trace, warn};
 #[cfg(feature = "http")]
 use {
     base64::{Engine, engine::general_purpose::STANDARD as B64},
@@ -219,6 +219,19 @@ fn error_summary(e: &FinTSError) -> String {
 /// The one place the library calls [`Transport::send`]: quirks (outgoing),
 /// send, masked `TRACE` event (success or failure), quirks (incoming).
 /// Returns the answer as clear text with all quirks applied.
+/// The size HNHBK states and the size the answer has, when they differ. HNHBK
+/// counts the message as it travels, PIN/TAN envelope included, so this looks
+/// at the answer as it arrived, before the quirk chain opens the envelope.
+/// `None` without a readable size: nothing to compare.
+pub(crate) fn size_mismatch(raw: &[u8]) -> Option<(u64, usize)> {
+    let segments = crate::codec::wire::tokenize(raw).ok()?;
+    let stated = segments
+        .iter()
+        .find(|s| s.segment_type() == "HNHBK")
+        .and_then(crate::segments::read::message_size)?;
+    (stated != raw.len() as u64).then_some((stated, raw.len()))
+}
+
 pub(crate) async fn exchange(
     transport: &dyn Transport,
     url: &str,
@@ -237,6 +250,12 @@ pub(crate) async fn exchange(
                 response = %crate::mask::redacted_text(&raw),
                 "exchange"
             );
+            // A bank that gets the size wrong is still read (the answer may be
+            // complete), but the mismatch is logged: it is the first sign of a
+            // cut or re-encoded answer.
+            if let Some((stated, actual)) = size_mismatch(&raw) {
+                warn!("HNHBK states {stated} bytes, the answer has {actual} bytes");
+            }
             Ok(quirks.incoming(&raw, ctx))
         }
         Err(e) => {
@@ -541,5 +560,38 @@ mod tests {
         assert!(events[0].contains("request="), "{events:?}");
         assert!(!events[0].contains("response="), "{events:?}");
         assert!(!events[0].contains("secret"), "{events:?}");
+    }
+
+    /// HNHBK states the size of the message as it travels, envelope included
+    /// (Formals B.5.2). The check must count those bytes, not the clear text
+    /// the quirk chain makes of them: the envelope (HNVSK and HNVSD's head)
+    /// is 100 to 150 bytes, which every real answer showed as a mismatch.
+    #[test]
+    fn message_size_counts_the_answer_with_its_envelope() {
+        let inner = "HIRMG:2:2+0010::Nachricht entgegengenommen.'";
+        let body = |size: usize| {
+            format!(
+                "HNHBK:1:3+{size:012}+300+D-1+3+D-1:3'\
+                 HNVSK:998:3+PIN:2+998+1+2::sys+1:20260101:120000+2:2:13:@8@00000000:5:1+280:10000000:user:V:0:0+0'\
+                 HNVSD:999:1+@{}@{inner}'HNHBS:5:1+3'",
+                inner.len()
+            )
+        };
+        let size = body(0).len();
+        let raw = body(size).into_bytes();
+        assert_eq!(size_mismatch(&raw), None);
+        // The clear-text form is shorter than stated: checking it was the bug.
+        let ctx = QuirkContext {
+            hbci_version: "300",
+            dialog_id: "D-1",
+            message_number: 3,
+        };
+        let clear = QuirkChain::default().incoming(&raw, &ctx);
+        assert!(clear.len() < size);
+
+        let wrong = body(size + 7).into_bytes();
+        assert_eq!(size_mismatch(&wrong), Some(((size + 7) as u64, size)));
+        // No header or no size: nothing to compare.
+        assert_eq!(size_mismatch(b"HIRMG:2:2+9010::Fehler.'"), None);
     }
 }
