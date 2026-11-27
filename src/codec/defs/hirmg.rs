@@ -65,9 +65,9 @@ mod tests {
         assert_eq!(e.field, "feedback[0].code");
         // At least one feedback.
         assert!(from_wire::<HiRmg2>(b"HIRMG:2:2'").is_err());
-        // The text is at most 80 bytes.
-        let long = "x".repeat(81);
-        let e = from_wire::<HiRmg2>(format!("HIRMG:2:2+0010::{long}'").as_bytes()).unwrap_err();
-        assert_eq!(e.field, "feedback[0].text");
+        // The text may be longer than its `an ..80` (DKB, 93 bytes).
+        let long = "x".repeat(93);
+        let s = from_wire::<HiRmg2>(format!("HIRMG:2:2+9050::{long}'").as_bytes()).unwrap();
+        assert_eq!(s.1.feedback[0].text.as_str(), long);
     }
 }

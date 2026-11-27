@@ -790,10 +790,17 @@ mod tests {
     }
 
     #[test]
-    fn unreadable_feedback_is_an_error() {
-        // Text longer than an ..80 (Formals C.8.1): HIRMS stays strict.
-        let seg = parse_segment(&format!("HIRMS:4:2:3+0020::{}'", "x".repeat(81)));
-        assert!(response_codes(&seg).is_err());
+    fn feedback_text_longer_than_80_is_read() {
+        // Longer than its `an ..80` (Formals C.8.1), as DKB sent on a failed
+        // login: the code and the whole text come through.
+        let long = "x".repeat(93);
+        for wire in [
+            format!("HIRMS:4:2:3+9931::{long}'"),
+            format!("HIRMG:2:2+9050::{long}'"),
+        ] {
+            let c = &response_codes(&parse_segment(&wire)).unwrap()[0];
+            assert_eq!(c.text, long);
+        }
     }
 
     #[test]

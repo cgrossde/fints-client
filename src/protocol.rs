@@ -2841,11 +2841,11 @@ mod tests {
         assert_eq!(shown, "Bank error 9876: Systemfehler, bitte spaeter erneut");
     }
 
-    /// HIRMG/HIRMS stay strict (Formals C.8.1: text `an ..80`): a code the
-    /// codec cannot read is not taken for a success.
+    /// A code the codec cannot read (not four digits, Formals C.8.1) is not
+    /// taken for a success.
     #[test]
     fn unreadable_response_codes_are_an_error() {
-        let wire = format!("HIRMG:2:2+0010::ok'HIRMS:3:2:3+0020::{}'", "x".repeat(81));
+        let wire = "HIRMG:2:2+0010::ok'HIRMS:3:2:3+00X0::ok'";
         let resp = parse_response(wire.as_bytes(), 1).unwrap();
         assert_eq!(resp.segment_codes.len(), 0);
         assert_eq!(resp.segment_errors().len(), 1);

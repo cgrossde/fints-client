@@ -211,7 +211,7 @@ assert_eq!(hksal.schema()[0].name, "account");
 - `Wrt` accepts trailing zeros after the comma (`100,50`) and writes canonically (`100,5`), so such input does not round-trip byte for byte.
 - Text read from the wire is kept untrimmed; `An::new` and friends trim, as B.4.1 requires for outgoing data.
 - An element that a bank sends beyond the definition is an error, so a segment with extra trailing data stays raw.
-- Strict reading where the spec is clear, since the raw fallback keeps a rejected segment visible: non-empty elements beyond the definition are `UnexpectedData`; `an` rejects CR/LF; `num` rejects leading zeros; fixed lengths are exact. The two lenient points are the `Wrt` trailing zeros and the untrimmed text above. Whether banks send any of this is unknown.
+- Strict reading where the spec is clear, since the raw fallback keeps a rejected segment visible: non-empty elements beyond the definition are `UnexpectedData`; `an` rejects CR/LF; `num` rejects leading zeros; fixed lengths are exact. The lenient points are the `Wrt` trailing zeros, the untrimmed text above, and the Rückmeldungstext of HIRMG and HIRMS, read without its `..80` limit (DKB sent 93 bytes on a failed login). Whether banks send any of this is unknown.
 - A message with no definition for its code and version is `Raw` with `ErrorKind::UnknownSegment`; `Response::segment_errors()` leaves those out so it reports only real breakage.
 - On read, a repeated group at the end of a group (HITANS) shows a 99th method as `UnexpectedData` at its position; at segment level it is `TooManyRepetitions`. Writing always reports `TooManyRepetitions`.
 - The codec types are not `serde`-serialisable yet.
